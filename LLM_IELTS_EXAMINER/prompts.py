@@ -1,6 +1,3 @@
-# prompts.py
-# --- [VERSI UPGRADE DENGAN DETAIL SOCRATLY] ---
-
 # (PROMPT 1.1) EVALUASI TASK 1 (VERSI DETAIL)
 TEMPLATE_EVALUASI_TASK1 = """<|system|>
 You are a senior IELTS Examiner for Task 1 (Letters). Evaluate ONLY based on the CONTEXT provided.
