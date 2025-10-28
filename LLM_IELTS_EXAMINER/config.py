@@ -9,11 +9,10 @@ load_dotenv()
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
 # Pilih salah satu model LLM (rekomendasi: llama atau mixtral)
 LLM_MODEL_NAME = "llama-3.3-70b-versatile"
-# LLM_MODEL_NAME = "mixtral-8x7b-32768"
-# LLM_MODEL_NAME = "openai/llama-3-70b" # Kurang stabil
+
 
 EMBEDDING_MODEL_ID = "BAAI/bge-large-en-v1.5" # Model embedding RAG
-# RERANKER_MODEL_ID = "BAAI/bge-reranker-large" # Jika nanti pakai re-ranking
+
 
 # Validasi API Key saat import
 if not GROQ_API_KEY:
