@@ -27,8 +27,8 @@ else:
 # Menggunakan path relatif dari file config.py ini
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(BASE_DIR, "data") # Asumsi folder 'data' sejajar config.py
-INDEX_PATH_T1 = os.path.join(DATA_DIR, "LLM_IELTS_EXAMINER/writingtask1ragdataset/faiss_index") # Path ke folder index T1
-INDEX_PATH_T2 = os.path.join(DATA_DIR, "LLM_IELTS_EXAMINER/writingtask2ragdataset/faiss_index") # Path ke folder index T2
+INDEX_PATH_T1 = os.path.join(DATA_DIR, "writingtask1ragdataset/faiss_index") # Path ke folder index T1
+INDEX_PATH_T2 = os.path.join(DATA_DIR, "writingtask2ragdataset/faiss_index") # Path ke folder index T2
 
 # --- Parameter RAG ---
 RETRIEVER_K = 5 # Jumlah dokumen yang diambil retriever awal
