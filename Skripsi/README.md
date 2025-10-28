@@ -2,7 +2,7 @@
 
 ## 📖 Pendahuluan
 
-[cite_start]Proyek ini adalah implementasi skripsi S1 berjudul **"Klasifikasi Gender Pada Sidik Jari Menggunakan Convolutional Neural Network Dengan Implementasi Model Arsitektur Inception-ResNetV2"**[cite: 1, 2, 3]. [cite_start]Tujuannya adalah untuk mengembangkan dan mengevaluasi model *deep learning* yang mampu mengklasifikasikan jenis kelamin (pria/wanita) berdasarkan citra sidik jari[cite: 131, 164, 177].
+Proyek ini adalah implementasi skripsi S1 berjudul **"Klasifikasi Gender Pada Sidik Jari Menggunakan Convolutional Neural Network Dengan Implementasi Model Arsitektur Inception-ResNetV2"**[cite: 1, 2, 3]. [cite_start]Tujuannya adalah untuk mengembangkan dan mengevaluasi model *deep learning* yang mampu mengklasifikasikan jenis kelamin (pria/wanita) berdasarkan citra sidik jari[cite: 131, 164, 177].
 
 [cite_start]Penelitian ini dilatarbelakangi oleh potensi sidik jari sebagai data biometrik yang tidak hanya unik untuk identifikasi individu, tetapi juga mungkin mengandung informasi tentang karakteristik lain seperti gender[cite: 156]. [cite_start]Kemampuan untuk mengidentifikasi gender dari sidik jari dapat berkontribusi signifikan dalam berbagai bidang, terutama keamanan dan analisis forensik[cite: 157, 180].
 
