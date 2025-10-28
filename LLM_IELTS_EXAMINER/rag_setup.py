@@ -1,12 +1,10 @@
 # rag_setup.py
 import os
-import torch # Untuk cek GPU
+import torch 
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 import config # Import konfigurasi (path, model ID, K)
-# Jika pakai re-ranking, aktifkan import di bawah
-# from langchain.retrievers import ContextualCompressionRetriever
-# from langchain_community.document_compressors.cross_encoder_rerank import CrossEncoderRerank
+
 
 def load_rag_components():
     """Memuat embedding model dan kedua retriever."""
@@ -20,7 +18,7 @@ def load_rag_components():
 
         embeddings = HuggingFaceEmbeddings(
             model_name=config.EMBEDDING_MODEL_ID,
-            model_kwargs={'device': device} # Gunakan GPU jika tersedia
+            model_kwargs={'device': device} 
         )
         print(">>> [RAG Setup] Embedding Model dimuat.")
     except Exception as e:
@@ -45,11 +43,6 @@ def load_rag_components():
         retriever_t1 = vectorstore_t1.as_retriever(
             search_kwargs={"k": config.RETRIEVER_K}
         )
-        # 2. Retriever dengan Re-ranking (jika mau diaktifkan):
-        # print("   Menggunakan Re-ranking...")
-        # base_retriever_t1 = vectorstore_t1.as_retriever(search_kwargs={"k": config.RETRIEVER_K * 2}) # Ambil lebih banyak
-        # compressor = CrossEncoderRerank(model_name=config.RERANKER_MODEL_ID, top_n=config.RERANKER_TOP_N, model_kwargs={'device': device})
-        # retriever_t1 = ContextualCompressionRetriever(base_compressor=compressor, base_retriever=base_retriever_t1)
         # ------------------------------------
         print(">> [RAG Setup] Retriever Task 1 dibuat!")
     except Exception as e:
@@ -71,11 +64,7 @@ def load_rag_components():
         retriever_t2 = vectorstore_t2.as_retriever(
             search_kwargs={"k": config.RETRIEVER_K}
         )
-        # 2. Retriever dengan Re-ranking (jika mau diaktifkan):
-        # print("   Menggunakan Re-ranking...")
-        # base_retriever_t2 = vectorstore_t2.as_retriever(search_kwargs={"k": config.RETRIEVER_K * 2})
-        # compressor = CrossEncoderRerank(model_name=config.RERANKER_MODEL_ID, top_n=config.RERANKER_TOP_N, model_kwargs={'device': device}) # Bisa pakai compressor yg sama
-        # retriever_t2 = ContextualCompressionRetriever(base_compressor=compressor, base_retriever=base_retriever_t2)
+ 
         # ------------------------------------
         print(">> [RAG Setup] Retriever Task 2 dibuat!")
     except Exception as e:
