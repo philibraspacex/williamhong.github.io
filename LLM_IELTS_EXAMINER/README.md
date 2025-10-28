@@ -5,8 +5,6 @@
 
 **AI Pelatih Menulis IELTS** adalah aplikasi web yang dirancang untuk membantu kandidat IELTS meningkatkan keterampilan Menulis Task 1 (General Training - Surat) dan Task 2 (Esai). Dengan memanfaatkan kekuatan *Large Language Models* (LLM) melalui Groq, *Retrieval-Augmented Generation* (RAG) dengan FAISS, dan kerangka kerja LangChain, alat ini memberikan umpan balik dan penilaian instan yang mendetail berdasarkan deskriptor band resmi IELTS.
 
-Dibangun dengan Streamlit, aplikasi ini menawarkan antarmuka yang interaktif dan ramah pengguna untuk evaluasi yang mudah.
-
 ---
 
 ## ✨ Fitur Utama
