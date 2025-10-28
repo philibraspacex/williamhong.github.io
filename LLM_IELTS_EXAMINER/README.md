@@ -39,7 +39,7 @@ Dibangun dengan Streamlit, aplikasi ini menawarkan antarmuka yang interaktif dan
 
 ## 🚀 Cara Penggunaan
 
-1.  **Akses Aplikasi:** Kunjungi aplikasi yang sudah di-*deploy* [di sini]([https://url-aplikasi-streamlit-lu.streamlit.app](https://williamhongappio-m4vxrapautjhqucv9e4b65.streamlit.app/)). 
+1.  **Akses Aplikasi:** Kunjungi aplikasi yang sudah di-*deploy* [di sini](https://url-aplikasi-streamlit-lu.streamlit.app). 
     2.  **Input:** Tempel (paste) soal IELTS Writing Task 1 atau Task 2 Anda di area teks pertama.
 3.  **Submit:** Tempel jawaban esai/surat Anda di area teks kedua.
 4.  **Evaluasi:** Klik tombol "🚀 Evaluasi Sekarang!".
