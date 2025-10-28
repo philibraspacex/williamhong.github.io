@@ -71,7 +71,25 @@ Proyek ini dibangun menggunakan kombinasi teknologi dari berbagai bidang:
     * **Manajemen Akses:** Cloud IAM (Konfigurasi *policy* untuk tim & *Service Account*).
     * **Dokumentasi API:** Swagger UI.
 
+---
 
+## 🔗 Tautan Proyek
+
+Berikut adalah tautan terkait proyek SkinCareku:
+
+* **Dataset:**
+    * [Face Skin Disease Dataset](https://www.kaggle.com/datasets/philibraspacex/faceskin-dataset)
+    * [Skincare Product Dataset](https://www.kaggle.com/datasets/philibraspacex/skincareproductdataset)
+* **Machine Learning:**
+    * [Notebook Klasifikasi Gambar (Kaggle)](https://www.kaggle.com/code/philibraspacex/notebookb56ae0a974)
+* **Kode Sumber:**
+    * [Repositori GitHub](https://github.com/AlvonJ/skincareku-project)
+* **Presentasi:**
+    * [Video Presentasi 10 Menit (YouTube)](https://youtu.be/BLgqEWHeQ-Q)
+    * [Slide Presentasi (Canva)](https://www.canva.com/design/DAFl3sMxaO8/nlPZn9vRw2X9J38uynP2wg/edit?utm_content=DAFl3sMxaO8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
+
+---
 
 ## 🙏 Ucapan Terima Kasih
 
