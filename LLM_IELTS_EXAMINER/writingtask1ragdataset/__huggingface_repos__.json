@@ -1,1 +1,0 @@
-{"repos": [{"repoId": "BAAI/bge-large-en-v1.5", "repoType": "model", "commitHash": "d4aa6901d3a41ba39fb536a557fa166f842b0e09", "filePaths": ["vocab.txt", "modules.json", "config.json", "tokenizer.json", "sentence_bert_config.json", "1_Pooling/config.json", "special_tokens_map.json", "model.safetensors", "README.md", "config_sentence_transformers.json", "tokenizer_config.json"]}]}
