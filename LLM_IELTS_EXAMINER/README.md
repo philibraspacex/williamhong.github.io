@@ -3,7 +3,7 @@
 [![Aplikasi Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)][(https://williamhongappio-m4vxrapautjhqucv9e4b65.streamlit.app/)
 ## 📝 Pengantar
 
-**AI Pelatih Menulis IELTS** adalah aplikasi web yang dirancang untuk membantu kandidat IELTS meningkatkan keterampilan Menulis Task 1 (General Training - Surat) dan Task 2 (Esai). Dengan memanfaatkan kekuatan *Large Language Models* (LLM) melalui Groq, *Retrieval-Augmented Generation* (RAG) dengan FAISS, dan kerangka kerja LangChain, alat ini memberikan umpan balik dan penilaian instan yang mendetail berdasarkan deskriptor band resmi IELTS. AI ini dibangun terlebih dahulu melalui notebook ipynb yang bisa diakses melalui link di bagian bawah, dan disempurnakan di local editor dikombinasikan menggunakan streamlit sebagai UI sederhana-nya.
+**IELTS GENERAL TRAINING EXAMINER AI** adalah aplikasi web yang dirancang untuk membantu kandidat IELTS meningkatkan keterampilan Menulis Task 1 (General Training - Surat) dan Task 2 (Esai). Dengan memanfaatkan kekuatan *Large Language Models* (LLM) melalui Groq, *Retrieval-Augmented Generation* (RAG) dengan FAISS, dan kerangka kerja LangChain, alat ini memberikan umpan balik dan penilaian instan yang mendetail berdasarkan deskriptor band resmi IELTS. AI ini dibangun terlebih dahulu melalui notebook ipynb yang bisa diakses melalui link di bagian bawah, dan disempurnakan di local editor dikombinasikan menggunakan streamlit sebagai UI sederhana-nya.
 
 ---
 
