@@ -1,4 +1,4 @@
-# 🤖 AI Pelatih Menulis IELTS
+# 🤖 IELTS GENERAL TRAINING EXAMINER AI
 
 [![Aplikasi Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)][(https://williamhongappio-m4vxrapautjhqucv9e4b65.streamlit.app/)
 ## 📝 Pengantar
