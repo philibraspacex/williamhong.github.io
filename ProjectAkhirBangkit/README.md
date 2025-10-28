@@ -78,7 +78,7 @@ Proyek ini dibangun menggunakan kombinasi teknologi dari berbagai bidang:
 Berikut adalah tautan terkait proyek SkinCareku:
 
 * **Project Plan**
-    * ProjectAkhirBangkit/Project Plan for Bangkit 2023 Product-based Capstone (1).pdf
+    * [ProjectAkhirBangkit/Project Plan for Bangkit 2023 Product-based Capstone (1).pdf](https://github.com/philibraspacex/williamhong.github.io/blob/main/ProjectAkhirBangkit/Project%20Plan%20for%20Bangkit%202023%20Product-based%20Capstone%20(1).pdf)
 * **Dataset:**
     * [Face Skin Disease Dataset](https://www.kaggle.com/datasets/philibraspacex/faceskin-dataset)
     * [Skincare Product Dataset](https://www.kaggle.com/datasets/philibraspacex/skincareproductdataset)
