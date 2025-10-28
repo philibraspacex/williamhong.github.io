@@ -1,3 +1,0 @@
-export HF_HOME=/mnt/d/huggingface_cache/huggingface
-
-python langchaintutorialAI.py
