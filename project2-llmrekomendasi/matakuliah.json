@@ -1,0 +1,1615 @@
+[
+  {
+    "kode": "MH1033",
+    "nama": "Bahasa Indonesia",
+    "sks": 3,
+    "semester_umum": 1,
+    "kategori": "Wajib",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [],
+    "profesi_relevan": ["MKH"],
+    "deskripsi": "Mengembangkan kompetensi mahasiswa dalam menggunakan Bahasa Indonesia ragam ilmiah secara efektif dan bertanggung jawab."
+  },
+  {
+    "kode": "MH1013",
+    "nama": "Pendidikan Agama Kristen",
+    "sks": 3,
+    "semester_umum": 1,
+    "kategori": "Wajib",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [],
+    "profesi_relevan": ["MKH"],
+    "deskripsi": "Memberikan pemahaman mendalam tentang ajaran dasar Kristen dan etika Kristiani dalam kehidupan profesi teknologi informasi."
+  },
+  {
+    "kode": "TI0013",
+    "nama": "Teknologi Komputer",
+    "sks": 3,
+    "semester_umum": 1,
+    "kategori": "Wajib",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [],
+    "profesi_relevan": ["INFRA"],
+    "deskripsi": "Memberikan pemahaman menyeluruh tentang komponen perangkat keras, arsitektur dasar komputer, dan cara kerja sistem komputer."
+  },
+  {
+    "kode": "TI0022",
+    "nama": "Praktikum Teknologi Komputer",
+    "sks": 2,
+    "semester_umum": 1,
+    "kategori": "Wajib",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0013",
+        "nilai_min": "E",
+        "sedang_ambil_diperbolehkan": true
+      }
+    ],
+    "profesi_relevan": ["INFRA"],
+    "deskripsi": "Praktikum untuk identifikasi komponen, perakitan PC, instalasi sistem operasi, dan troubleshooting hardware sederhana."
+  },
+  {
+    "kode": "TI0033",
+    "nama": "Matematika Teknik",
+    "sks": 3,
+    "semester_umum": 1,
+    "kategori": "Wajib",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [],
+    "profesi_relevan": ["AI", "DMS"],
+    "deskripsi": "Menyajikan konsep matematika esensial sebagai fondasi informatika, meliputi aljabar linier, kalkulus, dan teori bilangan."
+  },
+  {
+    "kode": "TI0043",
+    "nama": "Logika Matematika",
+    "sks": 3,
+    "semester_umum": 1,
+    "kategori": "Wajib",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [],
+    "profesi_relevan": ["AI", "PSD"],
+    "deskripsi": "Mempelajari dasar-dasar logika formal sebagai alat bantu penalaran dalam ilmu komputer, termasuk logika proposisional dan predikat."
+  },
+  {
+    "kode": "TI0203",
+    "nama": "Interaksi Manusia dan Komputer",
+    "sks": 3,
+    "semester_umum": 1,
+    "kategori": "Wajib",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [],
+    "profesi_relevan": ["PSD"],
+    "deskripsi": "Mempelajari konsep fundamental interaksi manusia dan sistem komputasi, berfokus pada prinsip desain UI/UX."
+  },
+  {
+    "kode": "TI0073",
+    "nama": "Algoritma dan Pemrograman",
+    "sks": 3,
+    "semester_umum": 2,
+    "kategori": "Wajib",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [],
+    "profesi_relevan": ["PSD", "AI", "DMS"],
+    "deskripsi": "Mata kuliah fundamental yang mengajarkan cara berpikir komputasional dan merancang solusi algoritmik menggunakan bahasa pemrograman."
+  },
+  {
+    "kode": "TI0082",
+    "nama": "Praktikum Algoritma dan Pemrograman",
+    "sks": 2,
+    "semester_umum": 2,
+    "kategori": "Wajib",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0073",
+        "nilai_min": "E",
+        "sedang_ambil_diperbolehkan": true
+      }
+    ],
+    "profesi_relevan": ["PSD", "AI", "DMS"],
+    "deskripsi": "Sesi praktikum intensif untuk melatih kemampuan problem solving dan coding berdasarkan materi Algoritma dan Pemrograman."
+  },
+  {
+    "kode": "TI0093",
+    "nama": "Matematika Diskrit",
+    "sks": 3,
+    "semester_umum": 2,
+    "kategori": "Wajib",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [],
+    "profesi_relevan": ["PSD", "AI"],
+    "deskripsi": "Mempelajari struktur matematika diskrit sebagai landasan informatika, meliputi teori himpunan, graf, dan kombinatorika."
+  },
+  {
+    "kode": "TI0103",
+    "nama": "Arsitektur dan Organisasi Komputer",
+    "sks": 3,
+    "semester_umum": 2,
+    "kategori": "Wajib",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0013",
+        "nilai_min": "D",
+        "sedang_ambil_diperbolehkan": false
+      }
+    ],
+    "profesi_relevan": ["INFRA", "AI"],
+    "deskripsi": "Membahas secara mendalam rancangan komputer, arsitektur set instruksi (ISA), pipelining, dan hirarki memori."
+  },
+  {
+    "kode": "TI0113",
+    "nama": "Statistik",
+    "sks": 3,
+    "semester_umum": 2,
+    "kategori": "Wajib",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0033",
+        "nilai_min": "D",
+        "sedang_ambil_diperbolehkan": false
+      }
+    ],
+    "profesi_relevan": ["AI", "DMS"],
+    "deskripsi": "Memberikan pemahaman tentang metode statistika untuk pengolahan, analisis, dan interpretasi data, termasuk probabilitas dan uji hipotesis."
+  },
+  {
+    "kode": "TI0052",
+    "nama": "Jaringan Komputer",
+    "sks": 2,
+    "semester_umum": 2,
+    "kategori": "Wajib",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0013",
+        "nilai_min": "D",
+        "sedang_ambil_diperbolehkan": false
+      }
+    ],
+    "profesi_relevan": ["INFRA"],
+    "deskripsi": "Pengantar konsep dasar dan teknologi jaringan komputer, mempelajari model OSI & TCP/IP, topologi, dan pengalamatan IP."
+  },
+  {
+    "kode": "TI0061",
+    "nama": "Praktikum Jaringan Komputer",
+    "sks": 1,
+    "semester_umum": 2,
+    "kategori": "Wajib",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0052",
+        "nilai_min": "E",
+        "sedang_ambil_diperbolehkan": true
+      }
+    ],
+    "profesi_relevan": ["INFRA"],
+    "deskripsi": "Praktikum membangun dan mengkonfigurasi jaringan sederhana, meliputi pengkabelan, konfigurasi IP, dan simulasi jaringan."
+  },
+  {
+    "kode": "MH1083",
+    "nama": "Pendidikan Kewarganegaraan",
+    "sks": 3,
+    "semester_umum": 2,
+    "kategori": "Wajib",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [],
+    "profesi_relevan": ["MKH"],
+    "deskripsi": "Membekali mahasiswa dengan pemahaman hak dan kewajiban warga negara Indonesia berdasarkan Pancasila dan UUD 1945."
+  },
+  {
+    "kode": "TI0133",
+    "nama": "Struktur Data",
+    "sks": 3,
+    "semester_umum": 3,
+    "kategori": "Wajib",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0073",
+        "nilai_min": "D",
+        "sedang_ambil_diperbolehkan": false
+      }
+    ],
+    "profesi_relevan": ["PSD", "AI", "DMS"],
+    "deskripsi": "Studi mendalam tentang penyimpanan dan pengorganisasian data di memori secara efisien, meliputi linked list, tree, hash table, dan graf."
+  },
+  {
+    "kode": "TI0141",
+    "nama": "Praktikum Struktur Data",
+    "sks": 1,
+    "semester_umum": 3,
+    "kategori": "Wajib",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0133",
+        "nilai_min": "E",
+        "sedang_ambil_diperbolehkan": true
+      }
+    ],
+    "profesi_relevan": ["PSD", "AI", "DMS"],
+    "deskripsi": "Implementasi praktis dari berbagai struktur data dan algoritma yang dibahas dalam kuliah Struktur Data."
+  },
+  {
+    "kode": "TI0153",
+    "nama": "Infrastruktur LAN",
+    "sks": 3,
+    "semester_umum": 3,
+    "kategori": "Wajib",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0052",
+        "nilai_min": "D",
+        "sedang_ambil_diperbolehkan": false
+      }
+    ],
+    "profesi_relevan": ["INFRA"],
+    "deskripsi": "Pembahasan lanjut teknologi dan protokol jaringan lokal (LAN), meliputi Ethernet, switching L2 (VLAN), dan routing L3 (RIP, OSPF)."
+  },
+  {
+    "kode": "TI0161",
+    "nama": "Praktikum Infrastruktur LAN",
+    "sks": 1,
+    "semester_umum": 3,
+    "kategori": "Wajib",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0153",
+        "nilai_min": "E",
+        "sedang_ambil_diperbolehkan": true
+      }
+    ],
+    "profesi_relevan": ["INFRA"],
+    "deskripsi": "Praktikum konfigurasi perangkat jaringan intermediate seperti managed switch dan router, meliputi implementasi VLAN dan routing."
+  },
+  {
+    "kode": "TI0173",
+    "nama": "Sistem Basis Data",
+    "sks": 3,
+    "semester_umum": 3,
+    "kategori": "Wajib",
+    "prasyarat_sks_total": 34,
+    "prasyarat_mk": [],
+    "profesi_relevan": ["DMS", "PSD"],
+    "deskripsi": "Memperkenalkan konsep fundamental sistem manajemen basis data (DBMS) relasional, perancangan ERD, normalisasi, dan bahasa query SQL."
+  },
+  {
+    "kode": "TI0181",
+    "nama": "Praktikum Sistem Basis Data",
+    "sks": 1,
+    "semester_umum": 3,
+    "kategori": "Wajib",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0173",
+        "nilai_min": "E",
+        "sedang_ambil_diperbolehkan": true
+      }
+    ],
+    "profesi_relevan": ["DMS", "PSD"],
+    "deskripsi": "Latihan praktis merancang skema database, membuat tabel, dan menulis query SQL dari tingkat dasar hingga intermediate."
+  },
+  {
+    "kode": "TI0193",
+    "nama": "Riset Operasi",
+    "sks": 3,
+    "semester_umum": 3,
+    "kategori": "Wajib",
+    "prasyarat_sks_total": 34,
+    "prasyarat_mk": [],
+    "profesi_relevan": ["AI"],
+    "deskripsi": "Pengantar metode kuantitatif untuk optimasi dan pengambilan keputusan, meliputi pemrograman linier, model transportasi, dan teori antrian."
+  },
+  {
+    "kode": "TI0213",
+    "nama": "Sistem Operasi",
+    "sks": 3,
+    "semester_umum": 3,
+    "kategori": "Wajib",
+    "prasyarat_sks_total": 34,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0103",
+        "nilai_min": "D",
+        "sedang_ambil_diperbolehkan": false
+      },
+      {
+        "kode_mk": "TI0073",
+        "nilai_min": "D",
+        "sedang_ambil_diperbolehkan": false
+      }
+    ],
+    "profesi_relevan": ["PSD", "INFRA"],
+    "deskripsi": "Mempelajari prinsip dasar, desain, dan implementasi sistem operasi modern, termasuk manajemen proses, memori, dan sistem file."
+  },
+  {
+    "kode": "TI0373",
+    "nama": "Rekayasa Perangkat Lunak Berorientasi Obyek",
+    "sks": 3,
+    "semester_umum": 4,
+    "kategori": "Wajib",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0133",
+        "nilai_min": "D",
+        "sedang_ambil_diperbolehkan": false
+      }
+    ],
+    "profesi_relevan": ["PSD"],
+    "deskripsi": "Memperkenalkan paradigma berorientasi objek (OOP) sebagai dasar pengembangan perangkat lunak modern, meliputi encapsulation, inheritance, dan polymorphism."
+  },
+  {
+    "kode": "TI0382",
+    "nama": "Praktikum Rekayasa Perangkat Lunak Berorientasi Obyek",
+    "sks": 2,
+    "semester_umum": 4,
+    "kategori": "Wajib",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0373",
+        "nilai_min": "E",
+        "sedang_ambil_diperbolehkan": true
+      }
+    ],
+    "profesi_relevan": ["PSD"],
+    "deskripsi": "Latihan praktis menerapkan konsep OOP dan prinsip software engineering dalam proyek kecil menggunakan bahasa OOP seperti Java/Python."
+  },
+  {
+    "kode": "TI0243",
+    "nama": "Pemrograman Web",
+    "sks": 3,
+    "semester_umum": 4,
+    "kategori": "Wajib",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0073",
+        "nilai_min": "D",
+        "sedang_ambil_diperbolehkan": false
+      },
+      {
+        "kode_mk": "TI0173",
+        "nilai_min": "D",
+        "sedang_ambil_diperbolehkan": false
+      }
+    ],
+    "profesi_relevan": ["PSD"],
+    "deskripsi": "Mempelajari teknologi fundamental membangun aplikasi web dinamis, mencakup frontend (HTML, CSS, JS) dan backend (PHP/Python/Node.js)."
+  },
+  {
+    "kode": "TI0251",
+    "nama": "Praktikum Pemrograman Web",
+    "sks": 1,
+    "semester_umum": 4,
+    "kategori": "Wajib",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0243",
+        "nilai_min": "E",
+        "sedang_ambil_diperbolehkan": true
+      }
+    ],
+    "profesi_relevan": ["PSD"],
+    "deskripsi": "Sesi praktikum intensif membangun aplikasi web full-stack sederhana, mengintegrasikan frontend, backend, dan database."
+  },
+  {
+    "kode": "TI0263",
+    "nama": "Kecerdasan Buatan",
+    "sks": 3,
+    "semester_umum": 4,
+    "kategori": "Wajib",
+    "prasyarat_sks_total": 43,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0073",
+        "nilai_min": "D",
+        "sedang_ambil_diperbolehkan": false
+      },
+      {
+        "kode_mk": "TI0133",
+        "nilai_min": "D",
+        "sedang_ambil_diperbolehkan": false
+      },
+      {
+        "kode_mk": "TI0113",
+        "nilai_min": "D",
+        "sedang_ambil_diperbolehkan": false
+      },
+      {
+        "kode_mk": "TI0043",
+        "nilai_min": "D",
+        "sedang_ambil_diperbolehkan": false
+      }
+    ],
+    "profesi_relevan": ["AI"],
+    "deskripsi": "Memberikan pemahaman konsep inti dan teknik dasar AI, meliputi agen cerdas, problem solving dengan pencarian, dan pengantar machine learning."
+  },
+  {
+    "kode": "TI0273",
+    "nama": "Keamanan Komputer",
+    "sks": 3,
+    "semester_umum": 4,
+    "kategori": "Wajib",
+    "prasyarat_sks_total": 58,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0213",
+        "nilai_min": "D",
+        "sedang_ambil_diperbolehkan": false
+      },
+      {
+        "kode_mk": "TI0052",
+        "nilai_min": "D",
+        "sedang_ambil_diperbolehkan": false
+      }
+    ],
+    "profesi_relevan": ["INFRA"],
+    "deskripsi": "Mempelajari prinsip dan praktik keamanan sistem komputer, ancaman siber, kriptografi dasar, dan mekanisme pertahanan."
+  },
+  {
+    "kode": "MH1073",
+    "nama": "Pendidikan Pancasila",
+    "sks": 3,
+    "semester_umum": 4,
+    "kategori": "Wajib",
+    "prasyarat_sks_total": 40,
+    "prasyarat_mk": [],
+    "profesi_relevan": ["MKH"],
+    "deskripsi": "Pendalaman filsafat Pancasila sebagai ideologi dan dasar negara, serta refleksi implementasi nilai-nilainya."
+  },
+  {
+    "kode": "TI0302",
+    "nama": "Etika Profesi Teknologi Informasi",
+    "sks": 2,
+    "semester_umum": 4,
+    "kategori": "Wajib",
+    "prasyarat_sks_total": 64,
+    "prasyarat_mk": [],
+    "profesi_relevan": [],
+    "deskripsi": "Membekali mahasiswa dengan pemahaman tanggung jawab etis, legal, dan sosial sebagai profesional IT, meliputi kode etik dan privasi data."
+  },
+  {
+    "kode": "TI0313",
+    "nama": "Manajemen Proyek Teknologi Informasi",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Wajib",
+    "prasyarat_sks_total": 75,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0373",
+        "nilai_min": "D",
+        "sedang_ambil_diperbolehkan": false
+      }
+    ],
+    "profesi_relevan": ["PSD", "AI", "DMS", "INFRA"],
+    "deskripsi": "Mempelajari prinsip dasar dan praktik manajemen proyek perangkat lunak, meliputi perencanaan, manajemen risiko, dan monitoring proyek."
+  },
+  {
+    "kode": "TI0323",
+    "nama": "Riset Teknologi Informasi",
+    "sks": 3,
+    "semester_umum": 6,
+    "kategori": "Wajib",
+    "prasyarat_sks_total": 75,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "MH1033",
+        "nilai_min": "D",
+        "sedang_ambil_diperbolehkan": false
+      },
+      {
+        "kode_mk": "TI0113",
+        "nilai_min": "D",
+        "sedang_ambil_diperbolehkan": false
+      }
+    ],
+    "profesi_relevan": [],
+    "deskripsi": "Mempelajari metodologi penelitian dalam bidang TI, cara merumuskan masalah, studi literatur, dan teknik penulisan ilmiah."
+  },
+  {
+    "kode": "TI0333",
+    "nama": "Kuliah Kerja Nyata",
+    "sks": 3,
+    "semester_umum": 6,
+    "kategori": "Wajib",
+    "prasyarat_sks_total": 90,
+    "prasyarat_mk": [],
+    "profesi_relevan": [],
+    "deskripsi": "Kegiatan pengabdian masyarakat untuk mengaplikasikan ilmu pengetahuan dan teknologi informatika secara langsung di lapangan."
+  },
+  {
+    "kode": "TI0341",
+    "nama": "Seminar",
+    "sks": 1,
+    "semester_umum": 7,
+    "kategori": "Wajib",
+    "prasyarat_sks_total": 100,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0323",
+        "nilai_min": "D",
+        "sedang_ambil_diperbolehkan": false
+      }
+    ],
+    "profesi_relevan": [],
+    "deskripsi": "Forum bagi mahasiswa untuk mempresentasikan proposal penelitian atau topik skripsi dan mendapatkan masukan."
+  },
+  {
+    "kode": "TI0353",
+    "nama": "Kerja Praktik",
+    "sks": 3,
+    "semester_umum": 7,
+    "kategori": "Wajib",
+    "prasyarat_sks_total": 100,
+    "prasyarat_mk": [],
+    "profesi_relevan": [],
+    "deskripsi": "Pengalaman kerja profesional di industri atau instansi terkait untuk menerapkan pengetahuan informatika dan melatih keterampilan kerja."
+  },
+  {
+    "kode": "TI0366",
+    "nama": "Skripsi",
+    "sks": 6,
+    "semester_umum": 8,
+    "kategori": "Wajib",
+    "prasyarat_sks_total": 122,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0341",
+        "nilai_min": "C",
+        "sedang_ambil_diperbolehkan": false
+      }
+    ],
+    "profesi_relevan": [],
+    "deskripsi": "Karya ilmiah akhir mahasiswa sebagai hasil penelitian mendalam di bidang informatika untuk memenuhi persyaratan kelulusan."
+  },
+  {
+    "kode": "TI3013",
+    "nama": "Administrasi Basis Data",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Wajib Profesi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0173",
+        "nilai_min": "C",
+        "sedang_ambil_diperbolehkan": false
+      }
+    ],
+    "profesi_relevan": ["DMS"],
+    "deskripsi": "Mempelajari tugas administratif untuk mengelola DBMS, termasuk instalasi, konfigurasi, backup/recovery, dan tuning performa."
+  },
+  {
+    "kode": "TI3033",
+    "nama": "Data Warehouse",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Wajib Profesi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0173",
+        "nilai_min": "C",
+        "sedang_ambil_diperbolehkan": false
+      }
+    ],
+    "profesi_relevan": ["DMS"],
+    "deskripsi": "Mempelajari konsep, arsitektur, dan implementasi data warehouse untuk mendukung Business Intelligence (BI) dan analisis data."
+  },
+  {
+    "kode": "TI3043",
+    "nama": "Basis Data Terdistribusi",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Wajib Profesi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [],
+    "profesi_relevan": ["DMS", "INFRA"],
+    "deskripsi": "Membahas arsitektur dan desain sistem basis data yang terdistribusi secara fisik di beberapa lokasi jaringan."
+  },
+  {
+    "kode": "TI3053",
+    "nama": "Keamanan Basis Data",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Wajib Profesi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [],
+    "profesi_relevan": ["DMS"],
+    "deskripsi": "Fokus pada perlindungan data dalam database, meliputi kontrol akses, enkripsi, audit, dan pencegahan serangan."
+  },
+  {
+    "kode": "TI3063",
+    "nama": "Administrasi Basis Data Non Relasional",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Wajib Profesi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [],
+    "profesi_relevan": ["DMS"],
+    "deskripsi": "Mempelajari administrasi dan manajemen database NoSQL seperti Document, Key-Value, dan Graph Database."
+  },
+  {
+    "kode": "TI6113",
+    "nama": "Pemrograman Perangkat Bergerak Berbasis Android",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Wajib Profesi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0373",
+        "nilai_min": "C",
+        "sedang_ambil_diperbolehkan": false
+      }
+    ],
+    "profesi_relevan": ["PSD", "AI", "DMS"],
+    "deskripsi": "Pengembangan aplikasi native untuk platform Android menggunakan bahasa pemrograman seperti Java atau Kotlin."
+  },
+  {
+    "kode": "TI6123",
+    "nama": "Pemrograman Perangkat Bergerak Berbasis iOS",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Wajib Profesi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0373",
+        "nilai_min": "C",
+        "sedang_ambil_diperbolehkan": false
+      }
+    ],
+    "profesi_relevan": ["PSD", "AI", "DMS"],
+    "deskripsi": "Pengembangan aplikasi native untuk platform iOS (iPhone/iPad) menggunakan bahasa pemrograman Swift dan Xcode."
+  },
+  {
+    "kode": "TI6133",
+    "nama": "Pemrograman Perangkat Bergerak Berbasis Hybrid",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Wajib Profesi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0243",
+        "nilai_min": "C",
+        "sedang_ambil_diperbolehkan": false
+      }
+    ],
+    "profesi_relevan": ["PSD", "AI", "DMS"],
+    "deskripsi": "Pengembangan aplikasi mobile cross-platform (Android dan iOS) menggunakan framework seperti React Native atau Flutter."
+  },
+  {
+    "kode": "TI6143",
+    "nama": "Pemrograman Desktop",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Wajib Profesi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0373",
+        "nilai_min": "C",
+        "sedang_ambil_diperbolehkan": false
+      }
+    ],
+    "profesi_relevan": ["PSD", "AI", "DMS"],
+    "deskripsi": "Pengembangan aplikasi untuk sistem operasi desktop (Windows, macOS, Linux) menggunakan toolkit seperti .NET, JavaFX, atau Qt."
+  },
+  {
+    "kode": "TI6153",
+    "nama": "Pemrograman Web Lanjut",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Wajib Profesi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0243",
+        "nilai_min": "C",
+        "sedang_ambil_diperbolehkan": false
+      }
+    ],
+    "profesi_relevan": ["PSD", "AI", "DMS"],
+    "deskripsi": "Pembahasan mendalam tentang teknologi web modern, meliputi framework backend/frontend (React, Vue, Django, Laravel) dan API."
+  },
+  {
+    "kode": "TI6033",
+    "nama": "Internet of Things",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Wajib Profesi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0243",
+        "nilai_min": "C",
+        "sedang_ambil_diperbolehkan": false
+      },
+      {
+        "kode_mk": "TI0103",
+        "nilai_min": "C",
+        "sedang_ambil_diperbolehkan": false
+      }
+    ],
+    "profesi_relevan": ["AI", "INFRA"],
+    "deskripsi": "Mempelajari konsep dan arsitektur IoT, sensor, mikrokontroler (Arduino/Raspberry Pi), dan protokol komunikasi (MQTT)."
+  },
+  {
+    "kode": "TI6043",
+    "nama": "Machine Learning",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Wajib Profesi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0263",
+        "nilai_min": "C",
+        "sedang_ambil_diperbolehkan": false
+      }
+    ],
+    "profesi_relevan": ["AI", "DMS"],
+    "deskripsi": "Studi mendalam tentang algoritma machine learning, meliputi supervised learning (regresi, klasifikasi) dan unsupervised learning (clustering)."
+  },
+  {
+    "kode": "TI6053",
+    "nama": "Jaringan Syaraf Tiruan",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Wajib Profesi",
+    "prasyarat_sks_total": 75,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0263",
+        "nilai_min": "C",
+        "sedang_ambil_diperbolehkan": false
+      }
+    ],
+    "profesi_relevan": ["AI"],
+    "deskripsi": "Mempelajari konsep, arsitektur, dan algoritma pelatihan Artificial Neural Networks (ANN), meliputi perceptron, MLP, dan backpropagation."
+  },
+  {
+    "kode": "TI6063",
+    "nama": "Knowledge-Based System",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Wajib Profesi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0263",
+        "nilai_min": "C",
+        "sedang_ambil_diperbolehkan": false
+      }
+    ],
+    "profesi_relevan": ["AI"],
+    "deskripsi": "Mempelajari sistem pakar (expert system) dan sistem berbasis pengetahuan, termasuk representasi pengetahuan dan mesin inferensi."
+  },
+  {
+    "kode": "TI6073",
+    "nama": "Pemrosesan Bahasa Natural",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Wajib Profesi",
+    "prasyarat_sks_total": 60,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0263",
+        "nilai_min": "D",
+        "sedang_ambil_diperbolehkan": false
+      }
+    ],
+    "profesi_relevan": ["AI"],
+    "deskripsi": "Fokus pada teknik komputasi untuk menganalisis dan memahami bahasa manusia, meliputi tokenisasi, parsing, dan sentiment analysis."
+  },
+  {
+    "kode": "TI6083",
+    "nama": "Pemrosesan Citra Digital",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Wajib Profesi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0033",
+        "nilai_min": "D",
+        "sedang_ambil_diperbolehkan": false
+      }
+    ],
+    "profesi_relevan": ["AI"],
+    "deskripsi": "Mempelajari teknik untuk memanipulasi dan menganalisis gambar digital, meliputi enhancement, restorasi, dan segmentasi."
+  },
+  {
+    "kode": "TI6093",
+    "nama": "Pemrosesan Sinyal Digital",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Wajib Profesi",
+    "prasyarat_sks_total": 60,
+    "prasyarat_mk": [],
+    "profesi_relevan": ["AI"],
+    "deskripsi": "Mempelajari representasi sinyal digital (audio, video) dan teknik pemrosesan seperti filtering, transformasi Fourier (FFT)."
+  },
+  {
+    "kode": "TI6103",
+    "nama": "Game Engine",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Wajib Profesi",
+    "prasyarat_sks_total": 60,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0103",
+        "nilai_min": "D",
+        "sedang_ambil_diperbolehkan": false
+      }
+    ],
+    "profesi_relevan": ["AI"],
+    "deskripsi": "Mempelajari arsitektur dan komponen inti dari game engine (Unity/Unreal), termasuk rendering, fisika, dan scripting."
+  },
+  {
+    "kode": "TI8033",
+    "nama": "Cloud Infrastructure",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Wajib Profesi",
+    "prasyarat_sks_total": 60,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0052",
+        "nilai_min": "D",
+        "sedang_ambil_diperbolehkan": false
+      }
+    ],
+    "profesi_relevan": ["INFRA"],
+    "deskripsi": "Mempelajari konsep, arsitektur, dan manajemen infrastruktur cloud computing, termasuk virtualisasi, storage, dan layanan IaaS."
+  },
+  {
+    "kode": "TI8023",
+    "nama": "Enterprise Network",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Wajib Profesi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0153",
+        "nilai_min": "C",
+        "sedang_ambil_diperbolehkan": false
+      }
+    ],
+    "profesi_relevan": ["INFRA"],
+    "deskripsi": "Fokus pada desain, implementasi, dan manajemen jaringan skala besar (enterprise), meliputi advanced routing, switching, dan network management."
+  },
+  {
+    "kode": "TI8043",
+    "nama": "Pengantar Keamanan Jaringan",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Wajib Profesi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0153",
+        "nilai_min": "D",
+        "sedang_ambil_diperbolehkan": false
+      }
+    ],
+    "profesi_relevan": ["INFRA"],
+    "deskripsi": "Membahas prinsip dasar keamanan jaringan, identifikasi ancaman, dan teknologi pertahanan seperti firewall, VPN, dan IDS/IPS."
+  },
+  {
+    "kode": "TI8053",
+    "nama": "Jaringan Nir Kabel",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Wajib Profesi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0153",
+        "nilai_min": "D",
+        "sedang_ambil_diperbolehkan": false
+      }
+    ],
+    "profesi_relevan": ["INFRA"],
+    "deskripsi": "Mempelajari teknologi jaringan nirkabel, terutama Wi-Fi (802.11), standar keamanan, dan desain jaringan WLAN."
+  },
+  {
+    "kode": "TI8063",
+    "nama": "Otomasi Jaringan",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Wajib Profesi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0153",
+        "nilai_min": "D",
+        "sedang_ambil_diperbolehkan": false
+      }
+    ],
+    "profesi_relevan": ["INFRA"],
+    "deskripsi": "Mempelajari teknik dan alat untuk mengotomatisasi konfigurasi, manajemen, dan monitoring perangkat jaringan (Ansible, Python)."
+  },
+  {
+    "kode": "TI8073",
+    "nama": "Teknologi WAN",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Wajib Profesi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI8023",
+        "nilai_min": "C",
+        "sedang_ambil_diperbolehkan": false
+      }
+    ],
+    "profesi_relevan": ["INFRA"],
+    "deskripsi": "Fokus pada teknologi konektivitas Wide Area Network (WAN) seperti MPLS, SD-WAN, dan protokol routing BGP."
+  },
+  {
+    "kode": "TI8083",
+    "nama": "Keamanan Jaringan",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Wajib Profesi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0273",
+        "nilai_min": "D",
+        "sedang_ambil_diperbolehkan": false
+      }
+    ],
+    "profesi_relevan": ["INFRA"],
+    "deskripsi": "Pembahasan mendalam tentang strategi dan implementasi keamanan jaringan, termasuk arsitektur keamanan dan respon insiden."
+  },
+  {
+    "kode": "TI5013",
+    "nama": "Pola Desain Antarmuka Pengguna",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Wajib Profesi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0203",
+        "nilai_min": "C",
+        "sedang_ambil_diperbolehkan": false
+      }
+    ],
+    "profesi_relevan": ["PSD"],
+    "deskripsi": "Mempelajari UI design patterns umum untuk menyelesaikan masalah desain antarmuka yang sering muncul."
+  },
+  {
+    "kode": "TI5023",
+    "nama": "Desain Eksperimental",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Wajib Profesi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [],
+    "profesi_relevan": ["PSD"],
+    "deskripsi": "Menerapkan metode penelitian eksperimental untuk menguji dan memvalidasi hipotesis desain dalam pengembangan produk."
+  },
+  {
+    "kode": "TI5033",
+    "nama": "Desain dan Evaluasi Antarmuka",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Wajib Profesi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0203",
+        "nilai_min": "D",
+        "sedang_ambil_diperbolehkan": false
+      },
+      {
+        "kode_mk": "TI0113",
+        "nilai_min": "D",
+        "sedang_ambil_diperbolehkan": false
+      }
+    ],
+    "profesi_relevan": ["PSD"],
+    "deskripsi": "Proses mendalam tentang desain antarmuka (UI) dan metode evaluasi usability testing untuk mengukur efektivitas desain."
+  },
+  {
+    "kode": "TI4023",
+    "nama": "Pemodelan Proses Bisnis",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Wajib Profesi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0373",
+        "nilai_min": "C",
+        "sedang_ambil_diperbolehkan": false
+      }
+    ],
+    "profesi_relevan": ["PSD", "DMS"],
+    "deskripsi": "Mempelajari teknik untuk memodelkan, menganalisis, dan memperbaiki proses bisnis menggunakan notasi standar seperti BPMN."
+  },
+  {
+    "kode": "TI4033",
+    "nama": "Test Engineering",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Wajib Profesi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0373",
+        "nilai_min": "C",
+        "sedang_ambil_diperbolehkan": false
+      }
+    ],
+    "profesi_relevan": ["PSD"],
+    "deskripsi": "Fokus pada strategi, metode, dan teknik pengujian perangkat lunak (software testing) secara sistematis."
+  },
+  {
+    "kode": "TI9013",
+    "nama": "Algoritma Graf",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Bebas Prodi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0073",
+        "nilai_min": "D",
+        "sedang_ambil_diperbolehkan": false
+      }
+    ],
+    "profesi_relevan": ["AI"],
+    "deskripsi": "Pembahasan mendalam tentang teori graf dan algoritma terkait, seperti shortest path, spanning tree, dan network flow."
+  },
+  {
+    "kode": "TI9023",
+    "nama": "Analisis Data Statistik",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Bebas Prodi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0113",
+        "nilai_min": "D",
+        "sedang_ambil_diperbolehkan": false
+      }
+    ],
+    "profesi_relevan": ["PSD", "AI", "DMS", "INFRA"],
+    "deskripsi": "Penerapan metode statistik untuk analisis data, eksplorasi data, dan visualisasi menggunakan perangkat lunak statistik."
+  },
+  {
+    "kode": "TI9383",
+    "nama": "Analisis Proses Bisnis",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Bebas Prodi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [],
+    "profesi_relevan": ["PSD", "DMS"],
+    "deskripsi": "Menganalisis proses bisnis organisasi untuk mengidentifikasi inefisiensi dan peluang perbaikan menggunakan teknologi."
+  },
+  {
+    "kode": "TI9463",
+    "nama": "Bahasa Inggris Informatika",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Bebas Prodi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0123",
+        "nilai_min": "E",
+        "sedang_ambil_diperbolehkan": false
+      }
+    ],
+    "profesi_relevan": ["PSD", "AI", "DMS", "INFRA"],
+    "deskripsi": "Fokus pada penggunaan Bahasa Inggris teknis dalam konteks informatika, termasuk membaca dokumentasi dan menulis laporan."
+  },
+  {
+    "kode": "TI9053",
+    "nama": "Competitive Programming (Lab)",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Bebas Prodi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0133",
+        "nilai_min": "C",
+        "sedang_ambil_diperbolehkan": false
+      }
+    ],
+    "profesi_relevan": ["AI"],
+    "deskripsi": "Latihan intensif pemecahan masalah algoritmik yang kompleks seperti yang ditemukan dalam kompetisi pemrograman."
+  },
+  {
+    "kode": "TI9393",
+    "nama": "Deep Learning",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Bebas Prodi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI6053",
+        "nilai_min": "D",
+        "sedang_ambil_diperbolehkan": false
+      }
+    ],
+    "profesi_relevan": ["PSD", "AI", "DMS", "INFRA"],
+    "deskripsi": "Pembahasan lanjutan dari Jaringan Syaraf Tiruan, fokus pada arsitektur deep learning seperti CNN (Convolutional) dan RNN (Recurrent)."
+  },
+  {
+    "kode": "TI9063",
+    "nama": "Desain Game",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Bebas Prodi",
+    "prasyarat_sks_total": 60,
+    "prasyarat_mk": [],
+    "profesi_relevan": ["AI"],
+    "deskripsi": "Mempelajari prinsip-prinsip desain game, mekanika permainan (game mechanics), level design, dan narasi dalam game."
+  },
+  {
+    "kode": "TI9073",
+    "nama": "Digital Humanities",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Bebas Prodi",
+    "prasyarat_sks_total": 60,
+    "prasyarat_mk": [],
+    "profesi_relevan": ["PSD", "AI"],
+    "deskripsi": "Penerapan metode komputasi dan teknologi digital untuk menganalisis data dalam ilmu humaniora (sastra, sejarah)."
+  },
+  {
+    "kode": "TI9403",
+    "nama": "E-Commerce",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Bebas Prodi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [],
+    "profesi_relevan": ["PSD", "DMS"],
+    "deskripsi": "Mempelajari model bisnis, teknologi, dan strategi manajemen untuk menjalankan bisnis secara online (toko online, marketplace)."
+  },
+  {
+    "kode": "TI9413",
+    "nama": "E-Government",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Bebas Prodi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [],
+    "profesi_relevan": ["PSD", "DMS"],
+    "deskripsi": "Penerapan teknologi informasi oleh pemerintah untuk memberikan layanan publik kepada warga negara secara online."
+  },
+  {
+    "kode": "TI9083",
+    "nama": "Game Audio",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Bebas Prodi",
+    "prasyarat_sks_total": 60,
+    "prasyarat_mk": [],
+    "profesi_relevan": ["AI"],
+    "deskripsi": "Fokus pada aspek audio dalam pengembangan game, termasuk desain suara, musik interaktif, dan implementasi audio."
+  },
+  {
+    "kode": "TI9103",
+    "nama": "Grafika Game",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Bebas Prodi",
+    "prasyarat_sks_total": 60,
+    "prasyarat_mk": [],
+    "profesi_relevan": ["AI"],
+    "deskripsi": "Mempelajari teknik grafika komputer real-time yang digunakan dalam game, termasuk rendering 3D, shading, dan lighting."
+  },
+  {
+    "kode": "TI9143",
+    "nama": "Kompresi Data",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Bebas Prodi",
+    "prasyarat_sks_total": 60,
+    "prasyarat_mk": [],
+    "profesi_relevan": ["AI", "DMS"],
+    "deskripsi": "Mempelajari algoritma untuk mengurangi ukuran file (data, gambar, audio, video) tanpa kehilangan informasi (lossless/lossy)."
+  },
+  {
+    "kode": "TI9153",
+    "nama": "Komunikasi Bisnis",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Bebas Prodi",
+    "prasyarat_sks_total": 100,
+    "prasyarat_mk": [],
+    "profesi_relevan": ["PSD", "AI", "DMS", "INFRA"],
+    "deskripsi": "Mengembangkan keterampilan komunikasi profesional dalam konteks bisnis, termasuk presentasi, negosiasi, dan penulisan laporan."
+  },
+  {
+    "kode": "TI9373",
+    "nama": "Manajemen Kepemimpinan",
+    "sks": 2,
+    "semester_umum": 5,
+    "kategori": "Pilihan Bebas Prodi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [],
+    "profesi_relevan": ["PSD", "AI", "DMS", "INFRA"],
+    "deskripsi": "Mempelajari teori dan praktik kepemimpinan serta manajemen tim dalam organisasi, fokus pada soft skills."
+  },
+  {
+    "kode": "TI9423",
+    "nama": "Manajemen Konten Web",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Bebas Prodi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [],
+    "profesi_relevan": ["PSD", "DMS"],
+    "deskripsi": "Fokus pada pengelolaan siklus hidup konten digital di web, termasuk penggunaan Content Management System (CMS) seperti WordPress."
+  },
+  {
+    "kode": "TI9433",
+    "nama": "Pemrograman Berorientasi Layanan",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Bebas Prodi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [],
+    "profesi_relevan": ["PSD", "AI", "DMS", "INFRA"],
+    "deskripsi": "Mempelajari Service-Oriented Architecture (SOA) dan pengembangan layanan web (web services) seperti REST API dan SOAP."
+  },
+  {
+    "kode": "TI9233",
+    "nama": "Praktikum Keahlian Khusus – SAP (Lab)",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Bebas Prodi",
+    "prasyarat_sks_total": 60,
+    "prasyarat_mk": [],
+    "profesi_relevan": ["DMS"],
+    "deskripsi": "Praktikum intensif menggunakan perangkat lunak Enterprise Resource Planning (ERP) dari SAP, fokus pada modul tertentu."
+  },
+  {
+    "kode": "TI9473",
+    "nama": "Program Kreativitas Mahasiswa (PKM)",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Bebas Prodi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [],
+    "profesi_relevan": ["PSD", "AI", "DMS", "INFRA"],
+    "deskripsi": "Mata kuliah untuk memfasilitasi mahasiswa dalam menyusun proposal dan melaksanakan Program Kreativitas Mahasiswa DIKTI."
+  },
+  {
+    "kode": "TI9483",
+    "nama": "Proyek Informatika Merdeka",
+    "sks": 6,
+    "semester_umum": 5,
+    "kategori": "Pilihan Bebas Prodi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [],
+    "profesi_relevan": ["PSD", "AI", "DMS", "INFRA"],
+    "deskripsi": "Proyek independen berskala besar di bawah bimbingan dosen, bagian dari program Merdeka Belajar Kampus Merdeka (MBKM)."
+  },
+  {
+    "kode": "TI9253",
+    "nama": "Semantic Web",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Bebas Prodi",
+    "prasyarat_sks_total": 60,
+    "prasyarat_mk": [],
+    "profesi_relevan": ["AI"],
+    "deskripsi": "Mempelajari teknologi untuk membuat data di web dapat dipahami oleh mesin, menggunakan RDF, OWL, dan SPARQL."
+  },
+  {
+    "kode": "TI9263",
+    "nama": "Sistem Informasi Geografis",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Bebas Prodi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [],
+    "profesi_relevan": ["PSD", "AI", "DMS", "INFRA"],
+    "deskripsi": "Mempelajari konsep dan teknologi untuk menangkap, menyimpan, menganalisis, dan menampilkan data geografis (peta digital)."
+  },
+  {
+    "kode": "TI9273",
+    "nama": "Sistem Pakar",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Bebas Prodi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0263",
+        "nilai_min": "D",
+        "sedang_ambil_diperbolehkan": false
+      }
+    ],
+    "profesi_relevan": ["PSD", "AI"],
+    "deskripsi": "Mempelajari cara membangun sistem yang meniru kemampuan pengambilan keputusan seorang pakar di domain tertentu."
+  },
+  {
+    "kode": "TI9283",
+    "nama": "Technopreneurship dan Manajemen Inovasi",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Bebas Prodi",
+    "prasyarat_sks_total": 100,
+    "prasyarat_mk": [],
+    "profesi_relevan": ["PSD", "AI", "DMS", "INFRA"],
+    "deskripsi": "Menggabungkan konsep teknologi, entrepreneurship, dan inovasi untuk membangun dan mengelola startup teknologi."
+  },
+  {
+    "kode": "TI9293",
+    "nama": "Teknik Animasi (Lab)",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Bebas Prodi",
+    "prasyarat_sks_total": 60,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0073",
+        "nilai_min": "D",
+        "sedang_ambil_diperbolehkan": false
+      }
+    ],
+    "profesi_relevan": ["PSD", "AI"],
+    "deskripsi": "Mempelajari prinsip dan teknik dasar animasi 2D dan 3D, termasuk modeling, rigging, dan rendering."
+  },
+  {
+    "kode": "TI9443",
+    "nama": "Forensic Text",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Bebas Prodi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [],
+    "profesi_relevan": ["AI"],
+    "deskripsi": "Penerapan teknik analisis teks dan NLP untuk investigasi forensik digital dan analisis bukti tekstual."
+  },
+  {
+    "kode": "TI9453",
+    "nama": "UX Writing dan Storytelling",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Bebas Prodi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [],
+    "profesi_relevan": ["PSD"],
+    "deskripsi": "Fokus pada penulisan teks (microcopy) yang efektif, jelas, dan persuasif untuk antarmuka pengguna (UI)."
+  },
+  {
+    "kode": "TI9333",
+    "nama": "Visualisasi Data",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Bebas Prodi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0203",
+        "nilai_min": "C",
+        "sedang_ambil_diperbolehkan": false
+      }
+    ],
+    "profesi_relevan": ["PSD", "DMS"],
+    "deskripsi": "Mempelajari prinsip dan teknik untuk merepresentasikan data secara visual (grafik, chart, dashboard) agar mudah dipahami."
+  },
+  {
+    "kode": "TI9493",
+    "nama": "Augmented Reality",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Bebas Prodi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [],
+    "profesi_relevan": [],
+    "deskripsi": "Mempelajari teknologi dan pengembangan aplikasi yang menggabungkan objek virtual ke dalam lingkungan dunia nyata."
+  },
+  {
+    "kode": "TI9553",
+    "nama": "Pengenalan Aplikasi Berbasis AI",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Bebas Prodi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [],
+    "profesi_relevan": [],
+    "deskripsi": "Pengantar konsep dasar AI dan eksplorasi berbagai aplikasi praktis kecerdasan buatan di berbagai industri."
+  },
+  {
+    "kode": "TI9563",
+    "nama": "AI for Trading",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Bebas Prodi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [],
+    "profesi_relevan": [],
+    "deskripsi": "Penerapan teknik AI dan machine learning untuk menganalisis pasar keuangan dan mengembangkan strategi trading otomatis."
+  },
+  {
+    "kode": "TI9573",
+    "nama": "Pemrograman Blockchain Dasar",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Bebas Prodi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [],
+    "profesi_relevan": [],
+    "deskripsi": "Pengantar teknologi blockchain, kriptografi, dan pengembangan smart contract dasar pada platform seperti Ethereum."
+  },
+  {
+    "kode": "TI9583",
+    "nama": "Container Orcherstration",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Bebas Prodi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [],
+    "profesi_relevan": [],
+    "deskripsi": "Mempelajari manajemen dan orkestrasi container (Docker) dalam skala besar menggunakan tools seperti Kubernetes."
+  },
+  {
+    "kode": "TI9163",
+    "nama": "Kriptografi",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Bebas Prodi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [
+      {
+        "kode_mk": "TI0033",
+        "nilai_min": "C",
+        "sedang_ambil_diperbolehkan": false
+      }
+    ],
+    "profesi_relevan": ["PSD"],
+    "deskripsi": "Mempelajari teknik matematika untuk mengamankan komunikasi (enkripsi, dekripsi, tanda tangan digital)."
+  },
+  {
+    "kode": "TI9505",
+    "nama": "Pengembangan Pribadi",
+    "sks": 5,
+    "semester_umum": 5,
+    "kategori": "Pilihan Bebas Prodi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [],
+    "profesi_relevan": ["PSD", "AI", "DMS", "INFRA"],
+    "deskripsi": "Mata kuliah soft skill untuk pengembangan diri. [CATATAN: Mata kuliah ini HANYA bisa diambil melalui program MBKM atau persetujuan khusus Kaprodi.]"
+  },
+  {
+    "kode": "TI9519",
+    "nama": "Program Studi Mandiri 1",
+    "sks": 9,
+    "semester_umum": 5,
+    "kategori": "Pilihan Bebas Prodi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [],
+    "profesi_relevan": ["PSD", "AI", "DMS", "INFRA"],
+    "deskripsi": "Mata kuliah proyek mandiri SKS besar. [CATATAN: Mata kuliah ini HANYA bisa diambil melalui program MBKM atau persetujuan khusus Kaprodi.]"
+  },
+  {
+    "kode": "TI9522",
+    "nama": "Program Studi Mandiri 2",
+    "sks": 12,
+    "semester_umum": 5,
+    "kategori": "Pilihan Bebas Prodi",
+    "prasyarat_sks_total": 0,
+    "prasyarat_mk": [],
+    "profesi_relevan": ["PSD", "AI", "DMS", "INFRA"],
+    "deskripsi": "Mata kuliah proyek mandiri SKS sangat besar. [CATATAN: Mata kuliah ini HANYA bisa diambil melalui program MBKM atau persetujuan khusus Kaprodi.]"
+  },
+  {
+    "kode": "MH2023",
+    "nama": "Apresiasi Seni",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Bebas Non-Prodi",
+    "prasyarat_sks_total": 20,
+    "prasyarat_mk": [],
+    "profesi_relevan": ["NON_PRODI"],
+    "deskripsi": "Mata kuliah non-prodi untuk mengapresiasi berbagai bentuk karya seni dan dampaknya terhadap budaya."
+  },
+  {
+    "kode": "MH2033",
+    "nama": "Apresiasi Seni Musik",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Bebas Non-Prodi",
+    "prasyarat_sks_total": 20,
+    "prasyarat_mk": [],
+    "profesi_relevan": ["NON_PRODI"],
+    "deskripsi": "Mata kuliah non-prodi untuk mengapresiasi berbagai genre musik, sejarah, dan elemen musikal."
+  },
+  {
+    "kode": "MH2043",
+    "nama": "Pendidikan HAM dan Demokrasi",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Bebas Non-Prodi",
+    "prasyarat_sks_total": 40,
+    "prasyarat_mk": [],
+    "profesi_relevan": ["NON_PRODI"],
+    "deskripsi": "Mata kuliah non-prodi yang membahas prinsip-prinsip Hak Asasi Manusia dan sistem demokrasi."
+  },
+  {
+    "kode": "MH2053",
+    "nama": "Pendidikan Perdamaian",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Bebas Non-Prodi",
+    "prasyarat_sks_total": 40,
+    "prasyarat_mk": [],
+    "profesi_relevan": ["NON_PRODI"],
+    "deskripsi": "Mata kuliah non-prodi yang mempelajari konsep perdamaian, resolusi konflik, dan keadilan sosial."
+  },
+  {
+    "kode": "MH2083",
+    "nama": "Ilmu Sosial dan Budaya Dasar",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Bebas Non-Prodi",
+    "prasyarat_sks_total": 60,
+    "prasyarat_mk": [],
+    "profesi_relevan": ["NON_PRODI"],
+    "deskripsi": "Mata kuliah non-prodi yang memberikan pemahaman dasar tentang struktur sosial dan kebudayaan manusia."
+  },
+  {
+    "kode": "PB5033",
+    "nama": "English for Job Hunting",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Bebas Non-Prodi",
+    "prasyarat_sks_total": 60,
+    "prasyarat_mk": [],
+    "profesi_relevan": ["NON_PRODI"],
+    "deskripsi": "Mata kuliah non-prodi untuk mempersiapkan mahasiswa mencari kerja, meliputi penulisan CV dan wawancara dalam Bahasa Inggris."
+  },
+  {
+    "kode": "PB5043",
+    "nama": "TOEFL Preparation",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Bebas Non-Prodi",
+    "prasyarat_sks_total": 60,
+    "prasyarat_mk": [],
+    "profesi_relevan": ["NON_PRODI"],
+    "deskripsi": "Mata kuliah non-prodi untuk melatih keterampilan Bahasa Inggris yang diujikan dalam tes TOEFL."
+  },
+  {
+    "kode": "PB5053",
+    "nama": "English for International Communication",
+    "sks": 3,
+    "semester_umum": 5,
+    "kategori": "Pilihan Bebas Non-Prodi",
+    "prasyarat_sks_total": 47,
+    "prasyarat_mk": [],
+    "profesi_relevan": ["NON_PRODI"],
+    "deskripsi": "Mata kuliah non-prodi untuk meningkatkan kemampuan komunikasi Bahasa Inggris dalam konteks internasional."
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "kode_mk": "TI0073",
+    "nama": "Algoritma dan Pemrograman",
+    "notes": "Fondasi WAJIB untuk semua jalur pemrograman (PSD) dan AI. Nilai bagus di sini sangat penting.",
+    "topik_terkait": [
+      "TI0133",
+      "TI0373",
+      "TI0243",
+      "TI0263",
+      "TI9053",
+      "TI9013"
+    ]
+  },
+  {
+    "kode_mk": "TI0133",
+    "nama": "Struktur Data",
+    "notes": "Lanjutan dari Alpro. Fondasi penting untuk software engineering (PSD) dan AI yang efisien.",
+    "topik_terkait": [
+      "TI0373",
+      "TI6043",
+      "TI6153",
+      "TI9053",
+      "TI9013"
+    ]
+  },
+  {
+    "kode_mk": "TI0113",
+    "nama": "Statistik",
+    "notes": "Fondasi WAJIB untuk jalur Data/AI. Menguasai ini membuka jalan ke Machine Learning dan Data Science.",
+    "topik_terkait": [
+      "TI0263",
+      "TI6043",
+      "TI3033",
+      "TI9023",
+      "TI9393",
+      "TI6073"
+    ]
+  },
+  {
+    "kode_mk": "TI0203",
+    "nama": "Interaksi Manusia dan Komputer",
+    "notes": "Fondasi utama untuk jalur UI/UX (PSD). Fokus pada bagaimana manusia berinteraksi dengan teknologi.",
+    "topik_terkait": [
+      "TI5013",
+      "TI5033",
+      "TI9453",
+      "TI9333"
+    ]
+  },
+  {
+    "kode_mk": "TI0173",
+    "nama": "Sistem Basis Data",
+    "notes": "Fondasi untuk jalur Database (DMS) dan pengembangan backend (PSD).",
+    "topik_terkait": [
+      "TI0243",
+      "TI3013",
+      "TI3033",
+      "TI3043",
+      "TI3053",
+      "TI3063",
+      "TI6153"
+    ]
+  },
+  {
+    "kode_mk": "TI0052",
+    "nama": "Jaringan Komputer",
+    "notes": "Fondasi WAJIB untuk jalur Network (INFRA).",
+    "topik_terkait": [
+      "TI0153",
+      "TI0273",
+      "TI8033",
+      "TI8043"
+    ]
+  },
+  {
+    "kode_mk": "TI0153",
+    "nama": "Infrastruktur LAN",
+    "notes": "Lanjutan Jarkom. Fondasi untuk semua spesialisasi jaringan INFRA.",
+    "topik_terkait": [
+      "TI8023",
+      "TI8043",
+      "TI8053",
+      "TI8063"
+    ]
+  },
+  {
+    "kode_mk": "TI0263",
+    "nama": "Kecerdasan Buatan",
+    "notes": "Mata kuliah pengantar yang membuka semua cabang AI tingkat lanjut.",
+    "topik_terkait": [
+      "TI6043",
+      "TI6053",
+      "TI6063",
+      "TI6073",
+      "TI9273",
+      "TI9393"
+    ]
+  },
+  {
+    "kode_mk": "TI0373",
+    "nama": "Rekayasa Perangkat Lunak Berorientasi Obyek",
+    "notes": "Fondasi penting untuk menjadi Software Developer (PSD) profesional. Mengajarkan cara membangun software skala besar.",
+    "topik_terkait": [
+      "TI6113",
+      "TI6123",
+      "TI6143",
+      "TI4023",
+      "TI4033"
+    ]
+  },
+  {
+    "kode_mk": "TI0243",
+    "nama": "Pemrograman Web",
+    "notes": "Fondasi untuk jalur Web Development (PSD) dan aplikasi terhubung (IoT).",
+    "topik_terkait": [
+      "TI6133",
+      "TI6153",
+      "TI6033"
+    ]
+  }
+]

@@ -1,0 +1,113 @@
+Kode;Nama Mata Kuliah;SKS;Kategori;Semester;Prasyarat SKS Total;Prasyarat MK;Profesi Relevan;Deskripsi
+MH1033;Bahasa Indonesia;3;Wajib;1;0;;MKH;Mengembangkan kompetensi mahasiswa dalam menggunakan Bahasa Indonesia ragam ilmiah secara efektif dan bertanggung jawab.
+MH1013;Pendidikan Agama Kristen;3;Wajib;1;0;;MKH;Memberikan pemahaman mendalam tentang ajaran dasar Kristen dan etika Kristiani dalam kehidupan profesi teknologi informasi.
+TI0013;Teknologi Komputer;3;Wajib;1;0;;INFRA;Memberikan pemahaman menyeluruh tentang komponen perangkat keras, arsitektur dasar komputer, dan cara kerja sistem komputer.
+TI0022;Praktikum Teknologi Komputer;2;Wajib;1;0;TI0013 (> E, Sedang);INFRA;Praktikum untuk identifikasi komponen, perakitan PC, instalasi sistem operasi, dan troubleshooting hardware sederhana.
+TI0033;Matematika Teknik;3;Wajib;1;0;;AI, DMS;Menyajikan konsep matematika esensial sebagai fondasi informatika, meliputi aljabar linier, kalkulus, dan teori bilangan.
+TI0043;Logika Matematika;3;Wajib;1;0;;AI, PSD;Mempelajari dasar-dasar logika formal sebagai alat bantu penalaran dalam ilmu komputer, termasuk logika proposisional dan predikat.
+TI0203;Interaksi Manusia dan Komputer;3;Wajib;1;0;;PSD;Mempelajari konsep fundamental interaksi manusia dan sistem komputasi, berfokus pada prinsip desain UI/UX.
+TI0073;Algoritma dan Pemrograman;3;Wajib;2;0;;PSD, AI, DMS;Mata kuliah fundamental yang mengajarkan cara berpikir komputasional dan merancang solusi algoritmik menggunakan bahasa pemrograman.
+TI0082;Praktikum Algoritma dan Pemrograman;2;Wajib;2;0;TI0073 (> E, Sedang);PSD, AI, DMS;Sesi praktikum intensif untuk melatih kemampuan problem solving dan coding berdasarkan materi Algoritma dan Pemrograman.
+TI0093;Matematika Diskrit;3;Wajib;2;0;;PSD, AI;Mempelajari struktur matematika diskrit sebagai landasan informatika, meliputi teori himpunan, graf, dan kombinatorika.
+TI0103;Arsitektur dan Organisasi Komputer;3;Wajib;2;0;TI0013 (> D);INFRA, AI;Membahas secara mendalam rancangan komputer, arsitektur set instruksi (ISA), pipelining, dan hirarki memori.
+TI0113;Statistik;3;Wajib;2;0;TI0033 (> D);AI, DMS;Memberikan pemahaman tentang metode statistika untuk pengolahan, analisis, dan interpretasi data, termasuk probabilitas dan uji hipotesis.
+TI0052;Jaringan Komputer;2;Wajib;2;0;TI0013 (> D);INFRA;Pengantar konsep dasar dan teknologi jaringan komputer, mempelajari model OSI & TCP/IP, topologi, dan pengalamatan IP.
+TI0061;Praktikum Jaringan Komputer;1;Wajib;2;0;TI0052 (> E, Sedang);INFRA;Praktikum membangun dan mengkonfigurasi jaringan sederhana, meliputi pengkabelan, konfigurasi IP, dan simulasi jaringan.
+MH1083;Pendidikan Kewarganegaraan;3;Wajib;2;0;;MKH;Membekali mahasiswa dengan pemahaman hak dan kewajiban warga negara Indonesia berdasarkan Pancasila dan UUD 1945.
+TI0133;Struktur Data;3;Wajib;3;0;TI0073 (> D);PSD, AI, DMS;Studi mendalam tentang penyimpanan dan pengorganisasian data di memori secara efisien, meliputi linked list, tree, hash table, dan graf.
+TI0141;Praktikum Struktur Data;1;Wajib;3;0;TI0133 (> E, Sedang);PSD, AI, DMS;Implementasi praktis dari berbagai struktur data dan algoritma yang dibahas dalam kuliah Struktur Data.
+TI0153;Infrastruktur LAN;3;Wajib;3;0;TI0052 (> D);INFRA;Pembahasan lanjut teknologi dan protokol jaringan lokal (LAN), meliputi Ethernet, switching L2 (VLAN), dan routing L3 (RIP, OSPF).
+TI0161;Praktikum Infrastruktur LAN;1;Wajib;3;0;TI0153 (> E, Sedang);INFRA;Praktikum konfigurasi perangkat jaringan intermediate seperti managed switch dan router, meliputi implementasi VLAN dan routing.
+TI0173;Sistem Basis Data;3;Wajib;3;34;;DMS, PSD;Memperkenalkan konsep fundamental sistem manajemen basis data (DBMS) relasional, perancangan ERD, normalisasi, dan bahasa query SQL.
+TI0181;Praktikum Sistem Basis Data;1;Wajib;3;0;TI0173 (> E, Sedang);DMS, PSD;Latihan praktis merancang skema database, membuat tabel, dan menulis query SQL dari tingkat dasar hingga intermediate.
+TI0193;Riset Operasi;3;Wajib;3;34;;AI;Pengantar metode kuantitatif untuk optimasi dan pengambilan keputusan, meliputi pemrograman linier, model transportasi, dan teori antrian.
+TI0213;Sistem Operasi;3;Wajib;3;34;TI0103 (> D), TI0073 (> D);PSD, INFRA;Mempelajari prinsip dasar, desain, dan implementasi sistem operasi modern, termasuk manajemen proses, memori, dan sistem file.
+TI0373;Rekayasa Perangkat Lunak Berorientasi Obyek;3;Wajib;4;0;TI0133 (> D);PSD;Memperkenalkan paradigma berorientasi objek (OOP) sebagai dasar pengembangan perangkat lunak modern, meliputi encapsulation, inheritance, dan polymorphism.
+TI0382;Praktikum Rekayasa Perangkat Lunak Berorientasi Obyek;2;Wajib;4;0;TI0373 (> E, Sedang);PSD;Latihan praktis menerapkan konsep OOP dan prinsip software engineering dalam proyek kecil menggunakan bahasa OOP seperti Java/Python.
+TI0243;Pemrograman Web;3;Wajib;4;0;TI0073 (> D), TI0173 (> D);PSD;Mempelajari teknologi fundamental membangun aplikasi web dinamis, mencakup frontend (HTML, CSS, JS) dan backend (PHP/Python/Node.js).
+TI0251;Praktikum Pemrograman Web;1;Wajib;4;0;TI0243 (> E, Sedang);PSD;Sesi praktikum intensif membangun aplikasi web full-stack sederhana, mengintegrasikan frontend, backend, dan database.
+TI0263;Kecerdasan Buatan;3;Wajib;4;43;TI0073 (> D), TI0133 (> D), TI0113 (> D), TI0043 (> D);AI;Memberikan pemahaman konsep inti dan teknik dasar AI, meliputi agen cerdas, problem solving dengan pencarian, dan pengantar machine learning.
+TI0273;Keamanan Komputer;3;Wajib;4;58;TI0213 (> D), TI0052 (> D);INFRA;Mempelajari prinsip dan praktik keamanan sistem komputer, ancaman siber, kriptografi dasar, dan mekanisme pertahanan.
+MH1073;Pendidikan Pancasila;3;Wajib;4;40;;MKH;Pendalaman filsafat Pancasila sebagai ideologi dan dasar negara, serta refleksi implementasi nilai-nilainya.
+TI0302;Etika Profesi Teknologi Informasi;2;Wajib;4;64;;;Membekali mahasiswa dengan pemahaman tanggung jawab etis, legal, dan sosial sebagai profesional IT, meliputi kode etik dan privasi data.
+TI0313;Manajemen Proyek Teknologi Informasi;3;Wajib;5;75;TI0373 (> D);PSD, AI, DMS, INFRA;Mempelajari prinsip dasar dan praktik manajemen proyek perangkat lunak, meliputi perencanaan, manajemen risiko, dan monitoring proyek.
+TI0323;Riset Teknologi Informasi;3;Wajib;6;75;MH1033 (> D), TI0113 (> D);;Mempelajari metodologi penelitian dalam bidang TI, cara merumuskan masalah, studi literatur, dan teknik penulisan ilmiah.
+TI0333;Kuliah Kerja Nyata;3;Wajib;6;90;;;Kegiatan pengabdian masyarakat untuk mengaplikasikan ilmu pengetahuan dan teknologi informatika secara langsung di lapangan.
+TI0341;Seminar;1;Wajib;7;100;TI0323 (> D);;Forum bagi mahasiswa untuk mempresentasikan proposal penelitian atau topik skripsi dan mendapatkan masukan.
+TI0353;Kerja Praktik;3;Wajib;7;100;;;Pengalaman kerja profesional di industri atau instansi terkait untuk menerapkan pengetahuan informatika dan melatih keterampilan kerja.
+TI0366;Skripsi;6;Wajib;8;122;TI0341 (> C);;Karya ilmiah akhir mahasiswa sebagai hasil penelitian mendalam di bidang informatika untuk memenuhi persyaratan kelulusan.
+TI3013;Administrasi Basis Data;3;Pilihan Wajib Profesi;5;0;TI0173 (> C);DMS;Mempelajari tugas administratif untuk mengelola DBMS, termasuk instalasi, konfigurasi, backup/recovery, dan tuning performa.
+TI3033;Data Warehouse;3;Pilihan Wajib Profesi;5;0;TI0173 (> C);DMS;Mempelajari konsep, arsitektur, dan implementasi data warehouse untuk mendukung Business Intelligence (BI) dan analisis data.
+TI3043;Basis Data Terdistribusi;3;Pilihan Wajib Profesi;5;0;;DMS, INFRA;Membahas arsitektur dan desain sistem basis data yang terdistribusi secara fisik di beberapa lokasi jaringan.
+TI3053;Keamanan Basis Data;3;Pilihan Wajib Profesi;5;0;;DMS;Fokus pada perlindungan data dalam database, meliputi kontrol akses, enkripsi, audit, dan pencegahan serangan.
+TI3063;Administrasi Basis Data Non Relasional;3;Pilihan Wajib Profesi;5;0;;DMS;Mempelajari administrasi dan manajemen database NoSQL seperti Document, Key-Value, dan Graph Database.
+TI6113;Pemrograman Perangkat Bergerak Berbasis Android;3;Pilihan Wajib Profesi;5;0;TI0373 (> C);PSD, AI, DMS;Pengembangan aplikasi native untuk platform Android menggunakan bahasa pemrograman seperti Java atau Kotlin.
+TI6123;Pemrograman Perangkat Bergerak Berbasis iOS;3;Pilihan Wajib Profesi;5;0;TI0373 (> C);PSD, AI, DMS;Pengembangan aplikasi native untuk platform iOS (iPhone/iPad) menggunakan bahasa pemrograman Swift dan Xcode.
+TI6133;Pemrograman Perangkat Bergerak Berbasis Hybrid;3;Pilihan Wajib Profesi;5;0;TI0243 (> C);PSD, AI, DMS;Pengembangan aplikasi mobile cross-platform (Android dan iOS) menggunakan framework seperti React Native atau Flutter.
+TI6143;Pemrograman Desktop;3;Pilihan Wajib Profesi;5;0;TI0373 (> C);PSD, AI, DMS;Pengembangan aplikasi untuk sistem operasi desktop (Windows, macOS, Linux) menggunakan toolkit seperti .NET, JavaFX, atau Qt.
+TI6153;Pemrograman Web Lanjut;3;Pilihan Wajib Profesi;5;0;TI0243 (> C);PSD, AI, DMS;Pembahasan mendalam tentang teknologi web modern, meliputi framework backend/frontend (React, Vue, Django, Laravel) dan API.
+TI6033;Internet of Things;3;Pilihan Wajib Profesi;5;0;TI0243 (> C), TI0103 (> C);AI, INFRA;Mempelajari konsep dan arsitektur IoT, sensor, mikrokontroler (Arduino/Raspberry Pi), dan protokol komunikasi (MQTT).
+TI6043;Machine Learning;3;Pilihan Wajib Profesi;5;0;TI0263 (> C);AI, DMS;Studi mendalam tentang algoritma machine learning, meliputi supervised learning (regresi, klasifikasi) dan unsupervised learning (clustering).
+TI6053;Jaringan Syaraf Tiruan;3;Pilihan Wajib Profesi;5;75;TI0263 (> C);AI;Mempelajari konsep, arsitektur, dan algoritma pelatihan Artificial Neural Networks (ANN), meliputi perceptron, MLP, dan backpropagation.
+TI6063;Knowledge-Based System;3;Pilihan Wajib Profesi;5;0;TI0263 (> C);AI;Mempelajari sistem pakar (expert system) dan sistem berbasis pengetahuan, termasuk representasi pengetahuan dan mesin inferensi.
+TI6073;Pemrosesan Bahasa Natural;3;Pilihan Wajib Profesi;5;60;TI0263 (> D);AI;Fokus pada teknik komputasi untuk menganalisis dan memahami bahasa manusia, meliputi tokenisasi, parsing, dan sentiment analysis.
+TI6083;Pemrosesan Citra Digital;3;Pilihan Wajib Profesi;5;0;TI0033 (> D);AI;Mempelajari teknik untuk memanipulasi dan menganalisis gambar digital, meliputi enhancement, restorasi, dan segmentasi.
+TI6093;Pemrosesan Sinyal Digital;3;Pilihan Wajib Profesi;5;60;;AI;Mempelajari representasi sinyal digital (audio, video) dan teknik pemrosesan seperti filtering, transformasi Fourier (FFT).
+TI6103;Game Engine;3;Pilihan Wajib Profesi;5;60;TI0103 (> D);AI, PSD;Mempelajari arsitektur dan komponen inti dari game engine (Unity/Unreal), termasuk rendering, fisika, dan scripting.
+TI8033;Cloud Infrastructure;3;Pilihan Wajib Profesi;5;60;TI0052 (> D);INFRA;Mempelajari konsep, arsitektur, dan manajemen infrastruktur cloud computing, termasuk virtualisasi, storage, dan layanan IaaS.
+TI8023;Enterprise Network;3;Pilihan Wajib Profesi;5;0;TI0153 (> C);INFRA;Fokus pada desain, implementasi, dan manajemen jaringan skala besar (enterprise), meliputi advanced routing, switching, dan network management.
+TI8043;Pengantar Keamanan Jaringan;3;Pilihan Wajib Profesi;5;0;TI0153 (> D);INFRA;Membahas prinsip dasar keamanan jaringan, identifikasi ancaman, dan teknologi pertahanan seperti firewall, VPN, dan IDS/IPS.
+TI8053;Jaringan Nir Kabel;3;Pilihan Wajib Profesi;5;0;TI0153 (> D);INFRA;Mempelajari teknologi jaringan nirkabel, terutama Wi-Fi (802.11), standar keamanan, dan desain jaringan WLAN.
+TI8063;Otomasi Jaringan;3;Pilihan Wajib Profesi;5;0;TI0153 (> D);INFRA;Mempelajari teknik dan alat untuk mengotomatisasi konfigurasi, manajemen, dan monitoring perangkat jaringan (Ansible, Python).
+TI8073;Teknologi WAN;3;Pilihan Wajib Profesi;5;0;TI8023 (> C);INFRA;Fokus pada teknologi konektivitas Wide Area Network (WAN) seperti MPLS, SD-WAN, dan protokol routing BGP.
+TI8083;Keamanan Jaringan;3;Pilihan Wajib Profesi;5;0;TI0273 (> D);INFRA;Pembahasan mendalam tentang strategi dan implementasi keamanan jaringan, termasuk arsitektur keamanan dan respon insiden.
+TI5013;Pola Desain Antarmuka Pengguna;3;Pilihan Wajib Profesi;5;0;TI0203 (> C);PSD;Mempelajari UI design patterns umum untuk menyelesaikan masalah desain antarmuka yang sering muncul.
+TI5023;Desain Eksperimental;3;Pilihan Wajib Profesi;5;0;;PSD;Menerapkan metode penelitian eksperimental untuk menguji dan memvalidasi hipotesis desain dalam pengembangan produk.
+TI5033;Desain dan Evaluasi Antarmuka;3;Pilihan Wajib Profesi;5;0;TI0203 (> D), TI0113 (> D);PSD;Proses mendalam tentang desain antarmuka (UI) dan metode evaluasi usability testing untuk mengukur efektivitas desain.
+TI4023;Pemodelan Proses Bisnis;3;Pilihan Wajib Profesi;5;0;TI0373 (> C);PSD, DMS;Mempelajari teknik untuk memodelkan, menganalisis, dan memperbaiki proses bisnis menggunakan notasi standar seperti BPMN.
+TI4033;Test Engineering;3;Pilihan Wajib Profesi;5;0;TI0373 (> C);PSD;Fokus pada strategi, metode, dan teknik pengujian perangkat lunak (software testing) secara sistematis.
+TI9013;Algoritma Graf;3;Pilihan Bebas Prodi;5;0;TI0073 (> D);AI;Pembahasan mendalam tentang teori graf dan algoritma terkait, seperti shortest path, spanning tree, dan network flow.
+TI9023;Analisis Data Statistik;3;Pilihan Bebas Prodi;5;0;TI0113 (> D);PSD, AI, DMS, INFRA;Penerapan metode statistik untuk analisis data, eksplorasi data, dan visualisasi menggunakan perangkat lunak statistik.
+TI9383;Analisis Proses Bisnis;3;Pilihan Bebas Prodi;5;0;;PSD, DMS;Menganalisis proses bisnis organisasi untuk mengidentifikasi inefisiensi dan peluang perbaikan menggunakan teknologi.
+TI9463;Bahasa Inggris Informatika;3;Pilihan Bebas Prodi;5;0;TI0123 (> E);PSD, AI, DMS, INFRA;Fokus pada penggunaan Bahasa Inggris teknis dalam konteks informatika, termasuk membaca dokumentasi dan menulis laporan.
+TI9053;Competitive Programming (Lab);3;Pilihan Bebas Prodi;5;0;TI0133 (> C);AI;Latihan intensif pemecahan masalah algoritmik yang kompleks seperti yang ditemukan dalam kompetisi pemrograman.
+TI9393;Deep Learning;3;Pilihan Bebas Prodi;5;0;TI6053 (> D);PSD, AI, DMS, INFRA;Pembahasan lanjutan dari Jaringan Syaraf Tiruan, fokus pada arsitektur deep learning seperti CNN (Convolutional) dan RNN (Recurrent).
+TI9063;Desain Game;3;Pilihan Bebas Prodi;5;60;;AI;Mempelajari prinsip-prinsip desain game, mekanika permainan (game mechanics), level design, dan narasi dalam game.
+TI9073;Digital Humanities;3;Pilihan Bebas Prodi;5;60;;PSD, AI;Penerapan metode komputasi dan teknologi digital untuk menganalisis data dalam ilmu humaniora (sastra, sejarah).
+TI9403;E-Commerce;3;Pilihan Bebas Prodi;5;0;;PSD, DMS;Mempelajari model bisnis, teknologi, dan strategi manajemen untuk menjalankan bisnis secara online (toko online, marketplace).
+TI9413;E-Government;3;Pilihan Bebas Prodi;5;0;;PSD, DMS;Penerapan teknologi informasi oleh pemerintah untuk memberikan layanan publik kepada warga negara secara online.
+TI9083;Game Audio;3;Pilihan Bebas Prodi;5;60;;AI;Fokus pada aspek audio dalam pengembangan game, termasuk desain suara, musik interaktif, dan implementasi audio.
+TI9103;Grafika Game;3;Pilihan Bebas Prodi;5;60;;AI;Mempelajari teknik grafika komputer real-time yang digunakan dalam game, termasuk rendering 3D, shading, dan lighting.
+TI9143;Kompresi Data;3;Pilihan Bebas Prodi;5;60;;AI, DMS;Mempelajari algoritma untuk mengurangi ukuran file (data, gambar, audio, video) tanpa kehilangan informasi (lossless/lossy).
+TI9153;Komunikasi Bisnis;3;Pilihan Bebas Prodi;5;100;;PSD, AI, DMS, INFRA;Mengembangkan keterampilan komunikasi profesional dalam konteks bisnis, termasuk presentasi, negosiasi, dan penulisan laporan.
+TI9373;Manajemen Kepemimpinan;2;Pilihan Bebas Prodi;5;0;;PSD, AI, DMS, INFRA;Mempelajari teori dan praktik kepemimpinan serta manajemen tim dalam organisasi, fokus pada soft skills.
+TI9423;Manajemen Konten Web;3;Pilihan Bebas Prodi;5;0;;PSD, DMS;Fokus pada pengelolaan siklus hidup konten digital di web, termasuk penggunaan Content Management System (CMS) seperti WordPress.
+TI9433;Pemrograman Berorientasi Layanan;3;Pilihan Bebas Prodi;5;0;;PSD, AI, DMS, INFRA;Mempelajari Service-Oriented Architecture (SOA) dan pengembangan layanan web (web services) seperti REST API dan SOAP.
+TI9233;Praktikum Keahlian Khusus – SAP (Lab);3;Pilihan Bebas Prodi;5;60;;DMS;Praktikum intensif menggunakan perangkat lunak Enterprise Resource Planning (ERP) dari SAP, fokus pada modul tertentu.
+TI9473;Program Kreativitas Mahasiswa (PKM);3;Pilihan Bebas Prodi;5;0;;PSD, AI, DMS, INFRA;Mata kuliah untuk memfasilitasi mahasiswa dalam menyusun proposal dan melaksanakan Program Kreativitas Mahasiswa DIKTI.
+TI9483;Proyek Informatika Merdeka;6;Pilihan Bebas Prodi;5;0;;PSD, AI, DMS, INFRA;Proyek independen berskala besar di bawah bimbingan dosen, bagian dari program Merdeka Belajar Kampus Merdeka (MBKM).
+TI9253;Semantic Web;3;Pilihan Bebas Prodi;5;60;;AI;Mempelajari teknologi untuk membuat data di web dapat dipahami oleh mesin, menggunakan RDF, OWL, dan SPARQL.
+TI9263;Sistem Informasi Geografis;3;Pilihan Bebas Prodi;5;0;;PSD, AI, DMS, INFRA;Mempelajari konsep dan teknologi untuk menangkap, menyimpan, menganalisis, dan menampilkan data geografis (peta digital).
+TI9273;Sistem Pakar;3;Pilihan Bebas Prodi;5;0;TI0263 (> D);PSD, AI;Mempelajari cara membangun sistem yang meniru kemampuan pengambilan keputusan seorang pakar di domain tertentu.
+TI9283;Technopreneurship dan Manajemen Inovasi;3;Pilihan Bebas Prodi;5;100;;PSD, AI, DMS, INFRA;Menggabungkan konsep teknologi, entrepreneurship, dan inovasi untuk membangun dan mengelola startup teknologi.
+TI9293;Teknik Animasi (Lab);3;Pilihan Bebas Prodi;5;60;TI0073 (> D);PSD, AI;Mempelajari prinsip dan teknik dasar animasi 2D dan 3D, termasuk modeling, rigging, dan rendering.
+TI9443;Forensic Text;3;Pilihan Bebas Prodi;5;0;;AI;Penerapan teknik analisis teks dan NLP untuk investigasi forensik digital dan analisis bukti tekstual.
+TI9453;UX Writing dan Storytelling;3;Pilihan Bebas Prodi;5;0;;PSD;Fokus pada penulisan teks (microcopy) yang efektif, jelas, dan persuasif untuk antarmuka pengguna (UI).
+TI9333;Visualisasi Data;3;Pilihan Bebas Prodi;5;0;TI0203 (> C);PSD, DMS;Mempelajari prinsip dan teknik untuk merepresentasikan data secara visual (grafik, chart, dashboard) agar mudah dipahami.
+TI9493;Augmented Reality;3;Pilihan Bebas Prodi;5;0;;;Mempelajari teknologi dan pengembangan aplikasi yang menggabungkan objek virtual ke dalam lingkungan dunia nyata.
+TI9553;Pengenalan Aplikasi Berbasis AI;3;Pilihan Bebas Prodi;5;0;;;Pengantar konsep dasar AI dan eksplorasi berbagai aplikasi praktis kecerdasan buatan di berbagai industri.
+TI9563;AI for Trading;3;Pilihan Bebas Prodi;5;0;;;Penerapan teknik AI dan machine learning untuk menganalisis pasar keuangan dan mengembangkan strategi trading otomatis.
+TI9573;Pemrograman Blockchain Dasar;3;Pilihan Bebas Prodi;5;0;;;Pengantar teknologi blockchain, kriptografi, dan pengembangan smart contract dasar pada platform seperti Ethereum.
+TI9583;Container Orcherstration;3;Pilihan Bebas Prodi;5;0;;;Mempelajari manajemen dan orkestrasi container (Docker) dalam skala besar menggunakan tools seperti Kubernetes.
+TI9163;Kriptografi;3;Pilihan Bebas Prodi;5;0;TI0033 (> C);PSD;Mempelajari teknik matematika untuk mengamankan komunikasi (enkripsi, dekripsi, tanda tangan digital).
+TI9505;Pengembangan Pribadi;5;Pilihan Bebas Prodi;5;0;;PSD, AI, DMS, INFRA;Mata kuliah soft skill untuk pengembangan diri. [CATATAN: Mata kuliah ini HANYA bisa diambil melalui program MBKM atau persetujuan khusus Kaprodi.]
+TI9519;Program Studi Mandiri 1;9;Pilihan Bebas Prodi;5;0;;PSD, AI, DMS, INFRA;Mata kuliah proyek mandiri SKS besar. [CATATAN: Mata kuliah ini HANYA bisa diambil melalui program MBKM atau persetujuan khusus Kaprodi.]
+TI9522;Program Studi Mandiri 2;12;Pilihan Bebas Prodi;5;0;;PSD, AI, DMS, INFRA;Mata kuliah proyek mandiri SKS sangat besar. [CATATAN: Mata kuliah ini HANYA bisa diambil melalui program MBKM atau persetujuan khusus Kaprodi.]
+MH2023;Apresiasi Seni;3;Pilihan Bebas Non-Prodi;5;20;;NON_PRODI;Mata kuliah non-prodi untuk mengapresiasi berbagai bentuk karya seni dan dampaknya terhadap budaya.
+MH2033;Apresiasi Seni Musik;3;Pilihan Bebas Non-Prodi;5;20;;NON_PRODI;Mata kuliah non-prodi untuk mengapresiasi berbagai genre musik, sejarah, dan elemen musikal.
+MH2043;Pendidikan HAM dan Demokrasi;3;Pilihan Bebas Non-Prodi;5;40;;NON_PRODI;Mata kuliah non-prodi yang membahas prinsip-prinsip Hak Asasi Manusia dan sistem demokrasi.
+MH2053;Pendidikan Perdamaian;3;Pilihan Bebas Non-Prodi;5;40;;NON_PRODI;Mata kuliah non-prodi yang mempelajari konsep perdamaian, resolusi konflik, dan keadilan sosial.
+MH2083;Ilmu Sosial dan Budaya Dasar;3;Pilihan Bebas Non-Prodi;5;60;;NON_PRODI;Mata kuliah non-prodi yang memberikan pemahaman dasar tentang struktur sosial dan kebudayaan manusia.
+PB5033;English for Job Hunting;3;Pilihan Bebas Non-Prodi;5;60;;NON_PRODI;Mata kuliah non-prodi untuk mempersiapkan mahasiswa mencari kerja, meliputi penulisan CV dan wawancara dalam Bahasa Inggris.
+PB5043;TOEFL Preparation;3;Pilihan Bebas Non-Prodi;5;60;;NON_PRODI;Mata kuliah non-prodi untuk melatih keterampilan Bahasa Inggris yang diujikan dalam tes TOEFL.
+PB5053;English for International Communication;3;Pilihan Bebas Non-Prodi;5;47;;NON_PRODI;Mata kuliah non-prodi untuk meningkatkan kemampuan komunikasi Bahasa Inggris dalam konteks internasional.
