@@ -14,17 +14,7 @@ from langchain_core.output_parsers import JsonOutputParser
 
 
 
-# ==========================================================
-# DATABASE MAHASISWA (VERSI LENGKAP + IMPROVISASI NILAI)
-# ==========================================================
-# ==========================================================
-# DATABASE MAHASISWA (VERSI LENGKAP + PERBAIKAN NAMA MK)
-# ==========================================================
-# ==========================================================
-# DATABASE MAHASISWA (VERSI LENGKAP + 4 PERSONA BARU)
-# ==========================================================
 DATA_MAHASISWA = {
-    # --- USER LAMA (YANG SUDAH KITA BENERIN) ---
     "7123001": {
         "nama": "William",
         "password": "william123", 
@@ -301,7 +291,7 @@ def parse_mk_lulus(text_input):
     return mk_dict
 
 # ==========================================================
-# BAGIAN CACHING: LOAD MODEL & DATABASE (BIAR NGGAK LEMOT)
+# BAGIAN CACHING: LOAD MODEL & DATABASE
 # ==========================================================
 
 @st.cache_resource
@@ -347,8 +337,6 @@ def load_retriever():
 
     # --- 2. Load FAISS Index dari Disk ---
     
-    # [IMPROVISASI] Ganti hardcoded path ke relative path
-    # Pastikan folder 'faiss_index_matakuliah' ada di folder yg sama dgn app.py
     index_folder = "faiss_index_matakuliah" 
     
     print(f"Mencoba memuat index FAISS dari folder '{index_folder}'...")
@@ -372,12 +360,6 @@ def load_retriever():
 # ==========================================================
 # BAGIAN RAG CHAIN (PROMPT & LOGIC)
 # ==========================================================
-
-# --- [GANTI TOTAL BLOK INI DENGAN KODE DI BAWAH] ---
-# Ini adalah prompt_text FINAL, semua kata 'kode_mk', 'nilai_min', dll. 
-# yang bikin error udah diganti jadi bahasa Indonesia.
-# NOTE: contoh JSON literal di dalam prompt harus di-escape ({{ }}) supaya PromptTemplate
-#       tidak menganggapnya sebagai placeholder. Lihat tanda {{ ... }} di bawah.
 prompt_text = """<|system|>
 Anda adalah Penasihat Akademik AI yang sangat teliti untuk Program Studi Informatika UKDW.
 Misi Anda adalah memberikan rekomendasi mata kuliah yang personal, akurat, dan patuh pada aturan prasyarat serta distribusi SKS kurikulum.
@@ -472,7 +454,6 @@ prompt_template = PromptTemplate(
     input_variables=["minat_user", "mk_lulus", "mk_sedang_ambil", "total_sks_lulus", "context"]
 )
 
-# --- [AKHIR DARI BLOK PENGGANTI] ---
 
 
 # CARI FUNGSI INI DI app.py
@@ -494,20 +475,7 @@ def format_docs(docs):
     ])
     return formatted_context
 
-# # CARI FUNGSI INI DI app.py
-# def get_query_as_string(input_dict):
-#     """Mengubah list minat (misal: ["AI", "PSD"]) jadi string (misal: "AI PSD") untuk retriever."""
-#     minat_list = input_dict.get("minat_user", [])
-    
-#     # --- [GANTI TOTAL LOGIKA FUNGSI INI] ---
-#     minat_str = " ".join(minat_list)
-#     # Query baru yang lebih "luas", memaksa retriever mengambil MK Wajib
-#     query_luas = f"Mata Kuliah Wajib, Pilihan Wajib Profesi {minat_str}, Pilihan Bebas Prodi {minat_str}"
-#     return query_luas
-#     # --- [AKHIR PERGANTIAN] ---
 
-# --- Gabungkan jadi RAG Chain ---
-# --- GANTI TOTAL FUNGSI LAMA DENGAN INI ---
 
 @st.cache_resource
 def get_rag_chain(_llm, _retriever):
@@ -525,11 +493,11 @@ def get_rag_chain(_llm, _retriever):
         print(f">>> [INFO] Berhasil memuat {len(all_docs)} dokumen dari docstore.")
     except Exception as e:
         print(f">>> [ERROR] Gagal mengambil dari docstore: {e}. Mencoba fallback...")
-        # Fallback: Set retriever untuk mengambil K=150 (semua MK)
+
         try:
-            # Modifikasi retriever yang di-pass
+            
             _retriever_all = _retriever.vectorstore.as_retriever(search_kwargs={'k': 150}) # Ambil 150+ MK
-            # Gunakan query general untuk "menipu" retriever agar mengembalikan semua
+           
             all_docs = _retriever_all.invoke("mata kuliah") 
             print(f">>> [INFO] Fallback K=150 berhasil, memuat {len(all_docs)} dokumen.")
         except Exception as e2:
@@ -537,8 +505,7 @@ def get_rag_chain(_llm, _retriever):
             st.error(f"Gagal total memuat context: {e2}")
             return None
 
-    # 2. Format SEMUA dokumen jadi satu string context RAKSASA
-    # Kita panggil format_docs (yang udah bener) secara manual di sini
+
     full_context_string = format_docs(all_docs)
     if not full_context_string:
          print(">>> [GAGAL] format_docs mengembalikan string kosong.")
@@ -612,9 +579,8 @@ def run_recommender_app(student_data):
     left_space, main_col, right_space = st.columns([1, 2, 1])
     with main_col:
         
-        # =======================================================
         # [LANGKAH 1: KALKULASI DATA DI AWAL]
-        # =======================================================
+        
         
         mk_lulus_dict = parse_mk_lulus(student_data["transkrip_text"])
         
