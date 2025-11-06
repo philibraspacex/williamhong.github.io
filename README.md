@@ -2,7 +2,7 @@
 
 Saya seorang Lulusan Teknik Informatika yang mempelajari dan membangun aplikasi inovatif, khususnya di bidang artificial intelligence.
 
-Di sini, saya mendokumentasikan perjalanan belajar saya dan memamerkan project yang sedang atau telah saya kerjakan. Beberapa teknologi yang sering saya gunakan antara lain **Python**, **LangChain**, **Streamlit**, dan berbagai *tools* terkait AI/ML.
+Di sini, saya mendokumentasikan perjalanan belajar saya dan memamerkan project yang sedang atau telah saya kerjakan. Beberapa teknologi yang sering saya gunakan antara lain **Python**, **LangChain**, **Tensorflow**, **HuggingFace**, **Pytorch** dan berbagai *tools* terkait AI/ML.
 
 ## 🚀 Project yang dikerjakan
 
