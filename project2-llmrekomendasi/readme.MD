@@ -143,5 +143,3 @@ Saat Anda menekan tombol "Berikan Rekomendasi":
     ```bash
     streamlit run app.py
     ```
-
-## 📂 Struktur File
