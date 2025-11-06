@@ -1,6 +1,6 @@
 # 🎓 Penasihat Akademik AI (Prodi Informatika UKDW)
 
-Sebuah aplikasi web berbasis Streamlit yang berfungsi sebagai penasihat akademik pribadi untuk mahasiswa. Aplikasi ini menggunakan arsitektur RAG (Retrieval-Augmented Generation) canggih untuk menganalisis transkrip nilai mahasiswa dan memberikan rekomendasi mata kuliah yang personal dan "gacor" untuk semester depan.
+Sebuah aplikasi web berbasis Streamlit yang berfungsi sebagai penasihat akademik pribadi untuk mahasiswa. Aplikasi ini menggunakan arsitektur RAG (Retrieval-Augmented Generation) canggih untuk menganalisis transkrip nilai mahasiswa dan memberikan rekomendasi mata kuliah yang personal untuk semester depan.
 
 ## 🚀 Fitur Utama
 
