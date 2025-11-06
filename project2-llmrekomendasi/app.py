@@ -337,7 +337,7 @@ def load_retriever():
 
     # --- 2. Load FAISS Index dari Disk ---
     
-    index_folder = "faiss_index_matakuliah" 
+    index_folder = "project2-llmrekomendasi/faiss_index_matakuliah" 
     
     print(f"Mencoba memuat index FAISS dari folder '{index_folder}'...")
     if os.path.exists(index_folder):
