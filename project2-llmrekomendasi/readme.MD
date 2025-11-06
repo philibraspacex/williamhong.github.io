@@ -1,44 +1,47 @@
 # 🎓 Penasihat Akademik AI (Prodi Informatika UKDW)
 
-Sebuah aplikasi web berbasis Streamlit yang berfungsi sebagai penasihat akademik pribadi untuk mahasiswa. Aplikasi ini menggunakan arsitektur RAG (Retrieval-Augmented Generation) canggih untuk menganalisis transkrip nilai mahasiswa dan memberikan rekomendasi mata kuliah yang personal untuk semester depan.
+Sebuah aplikasi web berbasis Streamlit yang berfungsi sebagai penasihat akademik pribadi untuk mahasiswa. Aplikasi ini menggunakan arsitektur RAG (Retrieval-Augmented Generation) canggih untuk menganalisis transkrip nilai mahasiswa dan memberikan rekomendasi mata kuliah yang personal dan akurat untuk semester depan.
 
 ## 🚀 Fitur Utama
 
-* **Sistem Login Mahasiswa:** Simulasi login menggunakan NIM dan password dengan *database* mahasiswa *hardcoded* (`DATA_MAHASISWA`).
+* **Sistem Login Mahasiswa:** Simulasi halaman login menggunakan NIM dan password dengan data mahasiswa yang telah ditentukan.
 * **Dashboard Akademik Interaktif:**
     * Menggunakan **Tab** (`st.tabs`) untuk memisahkan 4 kategori utama (Wajib, Pilihan Wajib Profesi, Pilihan Bebas Prodi, Pilihan Bebas Non-Prodi).
-    * Menampilkan **semua** mata kuliah di kurikulum, dengan penanda visual ("Sudah diambil (Nilai: A)" atau "Belum diambil").
-    * Mata kuliah yang sudah diambil otomatis diurutkan ke atas.
-* **Grouping Mata Kuliah Cerdas:**
-    * **Wajib:** Dikelompokkan per semester (Semester 1-8).
-    * **Pilihan Wajib Profesi:** Dikelompokkan per profesi (PSD, AI, DMS, INFRA, Pemrograman Bersama).
-    * **Pilihan Bebas Prodi:** Dikelompokkan secara cerdas menjadi "MBKM" dan "Pilihan Bebas Prodi Lainnya" (dengan *tagging* profesi untuk menghindari duplikasi).
-* **Sistem Rekomendasi AI "Gacor":**
-    * **Deteksi Minat Otomatis:** Menganalisis transkrip untuk mendeteksi profesi yang paling cocok (misal: "Minat terdeteksi: PSD 💻").
-    * **Logika Prompt Prioritas 3 Lapis:** Memaksa AI untuk merekomendasikan berdasarkan urutan: MK Wajib -> Pilihan Wajib Profesi -> Pilihan Bebas Prodi.
+    * Menampilkan **seluruh** mata kuliah dalam kurikulum, dilengkapi penanda visual ("Sudah diambil (Nilai: A)" atau "Belum diambil").
+    * Mata kuliah yang sudah diambil otomatis diurutkan ke bagian atas untuk visibilitas.
+* **Pengelompokan Mata Kuliah Cerdas:**
+    * **Wajib:** Dikelompokkan berdasarkan semester (Semester 1-8).
+    * **Pilihan Wajib Profesi:** Dikelompokkan berdasarkan profesi (PSD, AI, DMS, INFRA, dll).
+    * **Pilihan Bebas Prodi:** Dikelompokkan secara logis menjadi "MBKM" dan "Lainnya" (dengan *tagging* profesi) untuk menghindari duplikasi data.
+* **Sistem Rekomendasi AI yang Cerdas:**
+    * **Deteksi Minat Otomatis:** Menganalisis transkrip untuk mendeteksi profesi yang paling cocok berdasarkan nilai-nilai fondasi.
+    * **Logika Prompt Prioritas 3 Lapis:** Memaksa AI untuk merekomendasikan mata kuliah berdasarkan urutan kepentingan: 1. MK Wajib -> 2. Pilihan Wajib Profesi -> 3. Pilihan Bebas Prodi.
     * **Target SKS:** AI diinstruksikan untuk mengisi KRS hingga penuh (target 18-24 SKS).
-    * **Alasan "Gacor":** AI memberikan alasan rekomendasi berdasarkan *korelasi konseptual* ("Karena nilai Statistik kamu A, yang merupakan fondasi AI...").
+    * **Alasan yang Kontekstual:** AI memberikan alasan rekomendasi berdasarkan *korelasi konseptual* ("Karena nilai Statistik Anda A, yang merupakan fondasi kuat untuk Machine Learning...").
 
 ---
 
-## 🧠 Arsitektur & Konsep AI (Penjelasan Detail)
+## 🧠 Arsitektur & Konsep AI (Penjelasan Sederhana)
 
-Ini adalah inti dari proyek ini. AI bisa "gacor" karena kita tidak mengandalkan RAG murni (yang sering "abu-abu"). Kita menggunakan **Sistem RAG yang Diperkaya Korelasi Konseptual**.
+Kecerdasan buatan (AI) dalam proyek ini dirancang untuk tidak sekadar "menebak". AI ini dibekali pemahaman konseptual tentang kurikulum.
 
-Sistem ini memiliki 3 tahap utama:
+### 1. Tantangan Awal: AI Tanpa Konteks
 
-### 1. Data Pengetahuan (Knowledge Base)
+Jika kita hanya memberikan AI sebuah "kamus" berisi 130+ mata kuliah (file `matakuliah.json`), AI tersebut hanya akan taat pada deskripsi. Dia bisa membaca deskripsi "Statistik" dan "Machine Learning", tapi dia **tidak mengerti** bahwa kedua mata kuliah itu *berhubungan erat* secara konseptual.
 
-AI ini tidak belajar dari satu "buku", tapi dari dua sumber data yang berbeda fungsi:
+Hasilnya, rekomendasi akan bersifat "abu-abu", hanya berdasarkan kemiripan kata dalam deskripsi.
 
-#### A. `matakuliah.json` (Sang "Kamus")
-* **Isi:** 130+ mata kuliah lengkap dengan deskripsi, SKS, prasyarat, kategori, dan profesi relevan.
-* **Tujuan:** Sebagai "kamus" fakta. AI menggunakan ini untuk mengecek prasyarat, jumlah SKS, dan deskripsi dasar.
-* **Kelemahan:** "Kamus" ini "bodoh". Dia tidak tahu kalau `Statistik` punya hubungan konseptual dengan `Machine Learning`. Dia hanya tahu deskripsi masing-masing.
+### 2. Solusi: Arsitektur Dua Basis Data
 
-#### B. `korelasi_mk.json` (Sang "Otak")
+Untuk mengatasi ini, kita menggunakan dua sumber data:
+
+**A. `matakuliah.json` (Basis Data Faktual / "Kamus")**
+* **Isi:** 130+ mata kuliah lengkap (deskripsi, SKS, prasyarat, kategori).
+* **Fungsi:** Sebagai "kamus" fakta. AI menggunakan ini untuk mengecek prasyarat dan SKS.
+
+**B. `korelasi_mk.json` (Basis Pengetahuan / "Otak")**
 * **Isi:** HANYA 10 mata kuliah **Fondasi** (MK Wajib Semester 1-4) yang paling krusial.
-* **Tujuan:** Sebagai "otak" atau "buku contekan" yang berisi *insight* dosen. File ini memetakan hubungan konseptual antara MK Fondasi dan MK Spesialisasi.
+* **Fungsi:** Sebagai "otak" atau *knowledge base* yang berisi wawasan ahli (seperti dosen). File ini memetakan hubungan konseptual antara MK Fondasi dan MK Spesialisasi.
 * **Contoh Isi:**
     ```json
     {
@@ -46,55 +49,38 @@ AI ini tidak belajar dari satu "buku", tapi dari dua sumber data yang berbeda fu
       "notes": "Fondasi WAJIB untuk jalur Data/AI...",
       "topik_terkait": [
         "TI6043", // Machine Learning
-        "TI3033", // Data Warehouse
-        "TI9023"  // Analisis Data Statistik
+        "TI3033"  // Data Warehouse
       ]
     }
     ```
-* **Kekuatan:** Dengan "otak" ini, AI tidak lagi menebak-nebak. Dia tahu *fakta* bahwa nilai bagus di `Statistik` adalah sinyal kuat untuk mengambil `Machine Learning`.
+* **Hasil:** Dengan "otak" ini, AI tidak lagi menebak. Dia tahu *fakta* bahwa nilai bagus di `Statistik` adalah sinyal kuat untuk mengambil `Machine Learning`.
 
----
+### 3. Tahap Pra-Proses: "Pencangkokan" Konteks (build_index.py)
 
-### 2. Pembangunan Index (Operasi "Cangkok Otak")
+* "Otak" (`korelasi_mk.json`) tidak bisa diberikan langsung ke AI. Kita harus "mencangkokkannya" ke dalam "Kamus" (`matakuliah.json`).
+* Script `build_index.py` melakukan proses ini. Script akan "menyuntikkan" catatan korelasi ke dalam deskripsi MK Fondasi.
+* **Contoh Teks yang Dihasilkan untuk "Statistik":**
+    ```
+    Nama: Statistik
+    Deskripsi: Memberikan pemahaman tentang metode statistika...
+    
+    --- CATATAN FONDASI (PENTING) --- 
+    Ini adalah mata kuliah fondasi. Fondasi WAJIB untuk jalur Data/AI...
+    RELEVANSI KUAT KE: Machine Learning, Data Warehouse...
+    ```
+* Teks yang sudah digabung inilah yang kemudian diubah menjadi vektor dan disimpan di database **FAISS**.
 
-Sebelum aplikasi bisa dijalankan, kita harus "mencangkokkan" sang "Otak" (`korelasi_mk.json`) ke dalam sang "Kamus" (`matakuliah.json`). Proses ini dilakukan oleh script `build_index.py`.
+### 4. Tahap Eksekusi: AI yang "Cerdas" (app.py)
 
-1.  **Load:** Script membaca kedua file JSON.
-2.  **Suntik (Inject):** Script melakukan *looping* pada 130+ MK di "Kamus". Untuk setiap MK, script akan mengecek: "Apakah MK ini ada di dalam 'Otak'?"
-3.  **Contoh Pencangkokan:**
-    * Saat script memproses `TI0113` (Statistik) dari "Kamus", dia menemukannya di "Otak".
-    * Script kemudian menggabungkan deskripsi aslinya dengan "contekan" dari "Otak".
-    * **Teks Asli:** `"Deskripsi: Memberikan pemahaman tentang metode statistika..."`
-    * **Teks Baru (Hasil Suntik):**
-        ```
-        Nama: Statistik
-        Deskripsi: Memberikan pemahaman tentang metode statistika...
+Saat Anda menekan tombol "Berikan Rekomendasi":
 
-        --- CATATAN FONDASI (PENTING) --- 
-        Ini adalah mata kuliah fondasi. Fondasi WAJIB untuk jalur Data/AI...
-        RELEVANSI KUAT KE: Machine Learning, Data Warehouse, Analisis Data Statistik
-        ```
-4.  **Embedding:** Teks baru yang sudah "disuntik" inilah yang kemudian dikonversi menjadi vektor oleh model HuggingFace (`BAAI/bge-large-en-v1.5`).
-5.  **Simpan:** Semua 130+ vektor (termasuk 10 yang sudah "di-boost") disimpan ke dalam database `faiss_index_matakuliah`.
+1.  **Konteks Penuh:** Aplikasi tidak mencari 20 MK teratas. Aplikasi mengambil **SELURUH 130+ MK** dari database FAISS dan memberikannya kepada AI.
+2.  **Aturan Tegas:** AI diberikan 3 aturan prioritas yang ketat melalui *prompt*:
+    1.  **Prioritas 1:** "Selesaikan dulu MK WAJIB yang belum diambil."
+    2.  **Prioritas 2:** "Lalu, isi SKS dengan Pilihan Wajib Profesi menggunakan 'CATATAN FONDASI' sebagai panduan utama."
+    3.  **Prioritas 3:** "Jika SKS belum penuh (target 18-24 SKS), isi sisanya dengan Pilihan Bebas Prodi."
 
-Hasilnya adalah database vektor di mana MK Fondasi memiliki *kedekatan semantik* yang sangat tinggi dengan MK Spesialisasinya.
-
----
-
-### 3. Logika RAG saat Runtime (Eksekusi AI)
-
-Saat user menekan tombol "Berikan Rekomendasi" di `app.py`:
-
-1.  **Full Context (Penglihatan Penuh):** Aplikasi **TIDAK** menjalankan *retriever* pencarian "Top-K". Sebaliknya, aplikasi mengambil **SELURUH 130+ DOKUMEN** dari database FAISS.
-2.  **Format Konteks:** 130+ dokumen ini diformat menjadi satu string konteks raksasa, di mana setiap MK memiliki `Kategori:` (Wajib/Pilihan Wajib/dll).
-3.  **Penyusunan Prompt:** AI (Groq) diberikan *prompt* yang berisi:
-    * **Konteks Penuh:** (130+ MK yang sudah diformat).
-    * **Input User:** (Transkrip `mk_lulus`, `total_sks`, dan `minat_user`).
-    * **Aturan Main (Paling Penting):**
-        * `ATURAN KORELASI`: "Kamu HARUS memprioritaskan rekomendasi berdasarkan `CATATAN FONDASI`..."
-        * `ATURAN PRIORITAS`: "Kamu HARUS mengisi SKS dengan urutan: 1. MK Wajib yang tertinggal, 2. Pilihan Wajib Profesi, 3. Pilihan Bebas Prodi."
-        * `ATURAN TARGET`: "Targetkan total SKS antara **18 hingga 24 SKS**."
-4.  **Generasi Jawaban:** AI menerima "seluruh buku" (Full Context), "contekan" (Korelasi), dan "peraturan ujian" (Aturan Prompt). Dengan informasi lengkap ini, AI dipaksa untuk bertindak sebagai penasihat akademik yang patuh aturan dan cerdas, lalu mengembalikan jawaban dalam format JSON.
+**Intinya:** AI tidak lagi *menebak* berdasarkan kemiripan deskripsi, melainkan *mengikuti* 3 aturan prioritas menggunakan basis pengetahuan korelasi yang sudah kita tanamkan.
 
 ---
 
@@ -146,7 +132,7 @@ Saat user menekan tombol "Berikan Rekomendasi" di `app.py`:
         GROQ_API_KEY = "gsk_xxxxxxxxxxxxxxxxxxxxxxx"
         ```
 
-5.  **Build "Otak" AI (Wajib!):**
+5.  **Build Basis Pengetahuan AI (Wajib!):**
     Pastikan `matakuliah.json` (lengkap) dan `korelasi_mk.json` ada di folder. Jalankan script `build_index.py` **satu kali**:
     ```bash
     python build_index.py
