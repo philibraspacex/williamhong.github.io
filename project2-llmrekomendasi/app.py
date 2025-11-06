@@ -592,7 +592,7 @@ def run_recommender_app(student_data):
         target_sks = {"Wajib": 97, "Pilihan Wajib Profesi": 6, "Pilihan Bebas Prodi": 32, "Pilihan Bebas Non-Prodi": 9}
         
         try:
-            with open("matakuliah.json", "r", encoding="utf-8") as f:
+            with open("project2-llmrekomendasi/matakuliah.json", "r", encoding="utf-8") as f:
                 katalog_data = json.load(f)
             
             for mk in katalog_data:
